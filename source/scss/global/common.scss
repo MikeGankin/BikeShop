@@ -1,0 +1,38 @@
+body {
+    min-width: 1366px;
+    font-family: "Hagin Caps Medium", "Roboto" "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffffff;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  
+  @font-face {
+    font-weight: normal;
+    font-family: "Hagin Caps Medium";
+    font-style: normal;
+    src: url("fonts/HaginCapsMedium.woff2") format("woff2"), url("fonts/HaginCapsMedium.woff") format("woff");
+  }
+  
+  @font-face {
+    font-weight: bold;
+    font-family: "Roboto";
+    font-style: normal;
+    src: url("fonts/RobotoRegular.woff2") format("woff2"), url("fonts/RobotoRegular.woff") format("woff");
+  }

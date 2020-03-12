@@ -16,10 +16,10 @@ var csso = require("gulp-csso");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
-  return gulp.src("source/less/style.less")
+  return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(less())
+    .pipe(sass())
     .pipe(postcss([ autoprefixer() ]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
