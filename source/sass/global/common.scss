@@ -9,8 +9,13 @@ body {
 
 .wrapper {
   max-width: 1366px;
-  background-color: #E9E1D5;
   margin: 0 auto;
+}
+
+@media (max-width: $mobile-width) {
+  .wrapper {
+    max-width: 320px;
+  }
 }
 
 .visually-hidden {
