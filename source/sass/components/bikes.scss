@@ -1,0 +1,47 @@
+.bikes {
+  background-color: #E9E1D5;
+  padding-top: 80px;
+}
+
+.bikes__caption {
+  margin: 0 auto 28px;
+  width: 75%;
+  font-family: Hagin Caps Medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #817155;
+}
+
+.bikes__text {
+  margin: 0 auto;
+  width: 54%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #817155;
+}
+
+.bikes__list {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E9E1D5;
+}
+
+.bikes__item {
+  img{
+    display: block;
+    width: 283px;
+    mix-blend-mode: multiply;
+  }
+}
