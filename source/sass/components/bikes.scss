@@ -150,18 +150,13 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
+  transform: translateX(-75%);
 }
 
 .bikes__slide-1 {
-  transform: translateX(-75%);
   margin-right: 30px;
 }
 
 .bikes__slide-2 {
-  transform: translateX(-75%);
   margin-right: 30px;
-}
-
-.bikes__slide-3 {
-  transform: translateX(-75%);
 }
