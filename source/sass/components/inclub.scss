@@ -1,0 +1,50 @@
+.inclab__content {
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto 119px;
+  padding-top: 128px;
+}
+
+.inclub__img {
+  display: block;
+  width: 47%;
+}
+
+.inclub__text {
+  width: 49%;
+
+  h2 {
+    font-family: 'Hagin Caps Medium';
+    font-size: 48px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #BAA480;
+    margin: 0;
+  }
+
+  p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #E9E1D5;
+  }
+
+  a {
+    width: 47%;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    border: 1px solid #BAA480;
+    box-sizing: border-box;
+    padding: 20px 0 16px 0;
+    color: #9B8869;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
