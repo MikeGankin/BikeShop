@@ -14,7 +14,7 @@
     text-decoration: none;
     text-align: center;
     color: #817155;
-    border: 1px solid #9B8869;
+    border: 1px solid #9b8869;
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 0 auto;
@@ -127,6 +127,7 @@
   background-image: url("../img/left-icon.svg");
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .bikes__right-btn {
@@ -139,6 +140,7 @@
   background-image: url("../img/right-icon.svg");
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .bikes__slide-1,

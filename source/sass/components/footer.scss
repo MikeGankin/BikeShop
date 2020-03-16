@@ -22,7 +22,7 @@
     font-size: 18px;
     line-height: 20px;
     letter-spacing: 0.04em;
-    color: #BAA480;
+    color:#baa480;
     text-decoration: none;
     display: block;
     cursor: pointer;
@@ -63,17 +63,17 @@
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
-    color: #BAA480;
+    color: #baa480;
     position: relative;
 
     &::after {
       position: absolute;
-      content:'';
+      content: '';
       top: 3px;
       left: 53px;
       width: 1px;
       height: 12px;
-      background-color: #BAA480;
+      background-color: #baa480;
     }
   }
 
@@ -82,7 +82,7 @@
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
-    color: #BAA480;
+    color: #baa480;
     text-decoration: none;
   }
 }
