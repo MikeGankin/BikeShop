@@ -1,0 +1,117 @@
+.accessories {
+  background-color: #e9e1d5;
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+  .all-accessories {
+    display: block;
+    position: relative;
+    width: 20%;
+    font-family: "Hagin Caps Medium";
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #817155;
+    border: 1px solid #9B8869;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+  }
+}
+
+.accessories__caption {
+  margin: 0 auto 28px;
+  width: 75%;
+  font-family: "Hagin Caps Medium";
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #817155;
+}
+
+.accessories__text {
+  margin: 0 auto 80px;
+  width: 54%;
+  font-family: "Roboto";
+  font-size: 22px;
+  text-align: center;
+  color: #817155;
+}
+
+.accessories__list {
+  width: 1637px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 71px;
+}
+
+.accessories__item {
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 178px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border: 6px solid #f0ede8;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    mix-blend-mode: multiply;
+    margin-bottom: 109px;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .link svg {
+    position: absolute;
+    top: 215px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .link h3 {
+    font-family: "Hagin Caps Medium";
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    color: #817155;
+  }
+
+  .link p {
+    font-family: "Roboto";
+    font-size: 14px;
+    text-align: center;
+    color: #9b8869;
+  }
+
+  .link .description {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .link .cost {
+    font-family: "Hagin Caps Medium";
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ba4f4f;
+    margin: 0 auto;
+  }
+}
+
