@@ -16,13 +16,13 @@
 
 .footer-nav__item {
   a {
-    font-family: "Hagin Caps Medium";
+    font-family: "Hagin Caps Medium", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
     letter-spacing: 0.04em;
-    color:#baa480;
+    color: #baa480;
     text-decoration: none;
     display: block;
     cursor: pointer;
@@ -59,7 +59,7 @@
   p {
     display: block;
     margin: 0;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
@@ -68,7 +68,7 @@
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       top: 3px;
       left: 53px;
       width: 1px;
@@ -78,7 +78,7 @@
   }
 
   a {
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;

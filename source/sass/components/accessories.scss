@@ -8,7 +8,7 @@
     display: block;
     position: relative;
     width: 20%;
-    font-family: "Hagin Caps Medium";
+    font-family: "Hagin Caps", sans-serif;
     font-size: 24px;
     text-transform: uppercase;
     text-decoration: none;
@@ -24,7 +24,7 @@
 .accessories__caption {
   margin: 0 auto 28px;
   width: 75%;
-  font-family: "Hagin Caps Medium";
+  font-family: "Hagin Caps", sans-serif;
   font-size: 48px;
   text-align: center;
   text-transform: uppercase;
@@ -34,7 +34,7 @@
 .accessories__text {
   margin: 0 auto 80px;
   width: 54%;
-  font-family: "Roboto";
+  font-family: "Roboto Regular", sans-serif;
   font-size: 22px;
   text-align: center;
   color: #817155;
@@ -88,7 +88,7 @@
   }
 
   .link h3 {
-    font-family: "Hagin Caps Medium";
+    font-family: "Hagin Caps", sans-serif;
     font-size: 24px;
     text-align: center;
     text-transform: uppercase;
@@ -97,7 +97,7 @@
   }
 
   .link p {
-    font-family: "Roboto";
+    font-family: "Roboto Regular", sans-serif;
     font-size: 14px;
     text-align: center;
     color: #9b8869;
@@ -109,7 +109,7 @@
   }
 
   .link .cost {
-    font-family: "Hagin Caps Medium";
+    font-family: "Hagin Caps", sans-serif;
     font-size: 24px;
     text-transform: uppercase;
     color: #ba4f4f;
