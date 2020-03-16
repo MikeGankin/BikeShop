@@ -72,7 +72,7 @@
     width: 100%;
     mix-blend-mode: multiply;
     margin: 0 0 109px 0;
-    object-fit: scale-down;
+    object-fit: cover;
   }
 
   .link {
@@ -89,7 +89,7 @@
   .link h3 {
     font-family: "Hagin Caps Medium";
     font-size: 24px;
-    width: 81%;
+    width: 58%;
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto;
