@@ -16,8 +16,8 @@
 
   &::after {
     position: absolute;
-    top: -4px;
-    left: 0;
+    top: 0;
+    left: -28px;
     display: inline-block;
     width: 27px;
     height: 27px;
@@ -118,10 +118,22 @@
 
   ul {
     font-family: "Roboto", sans-serif;
+    padding-left: 27px;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #9b8869;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  input:checked + label::after {
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: transparent;
   }
 
   button {
@@ -131,6 +143,9 @@
     top: 0;
     right: 0;
     background-image: url("../img/plus.svg");
+    background-color: transparent;
+    border: none;
     margin: 0;
   }
 }
+
