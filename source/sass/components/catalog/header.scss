@@ -1,0 +1,29 @@
+.catalog-header__content {
+  font-family: "Hagin Caps Medium", sans-serif;
+  width: 100%;
+}
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.catalog-nav {
+  display: flex;
+  width: 100%;
+  margin-top: 36px;
+  margin-bottom: 185px;
+
+  .catalog-nav__logo {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 119px;
+    width: 23%;
+  }
+}
