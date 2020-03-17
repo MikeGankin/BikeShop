@@ -1,22 +1,24 @@
+.catalog-header-container {
+  width: 100%;
+  background-color: #e9e1d5;
+  padding-top: 36px;
+}
+
 .catalog-header__content {
   font-family: "Hagin Caps Medium", sans-serif;
   width: 100%;
 }
 
-.catalog-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.catalog__header {
   width: 93%;
   margin: 0 auto;
   position: relative;
 }
 
-.catalog-nav {
+.catalog__nav {
   display: flex;
   width: 100%;
-  margin-top: 36px;
-  margin-bottom: 185px;
+  margin-bottom: 49px;
 
   .catalog-nav__logo {
     box-sizing: border-box;
@@ -25,5 +27,49 @@
     justify-content: center;
     margin-right: 119px;
     width: 23%;
+  }
+}
+
+.filter-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  border-top: 1px solid #9b8869;
+  border-bottom: 1px solid #9b8869;
+  font-family: "Hagin Caps", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #9b8869;
+
+  span {
+    color: #ba4f4f;
+  }
+
+  .select {
+    font-family: "Hagin Caps", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #9b8869;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12px;
+      height: 6px;
+      background-color: red;
+    }
   }
 }
