@@ -1,0 +1,74 @@
+.catalog-container {
+  display: flex;
+  justify-content: space-between;
+  width: 88%;
+  margin: 0 53px auto;
+}
+
+.catalog {
+  width: 80%;
+}
+
+.catalog__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  width: 30%;
+  position: relative;
+
+  a {
+    display: block;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    mix-blend-mode: multiply;
+    margin: 0 0 109px 0;
+    object-fit: cover;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .link svg {
+    position: absolute;
+    top: 215px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .link h3 {
+    font-family: "Hagin Caps Medium", sans-serif;
+    font-size: 24px;
+    width: 58%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: #817155;
+  }
+
+  .link p {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #9b8869;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 178px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border: 6px solid #f0ede8;
+  }
+}

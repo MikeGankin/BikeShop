@@ -1,0 +1,136 @@
+.filter {
+  width: 18%;
+  margin-right: 57px;
+
+  li {
+    list-style: none;
+  }
+}
+
+.filter-nav {
+  margin-bottom: 48px;
+}
+
+.checkbox-label {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin-right: 9px;
+    content: "";
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    opacity: 0.78;
+  }
+}
+
+.filter__range {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19px;
+
+  [value] {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #9b8869;
+  }
+
+  input {
+    width: 40%;
+    height: 30px;
+    border: 1px solid #9b8869;
+    background-color: transparent;
+    margin-right: 30px;
+  }
+
+  .max-range {
+    margin-right: 0;
+  }
+}
+
+.filter__slider {
+  position: relative;
+  margin-bottom: 31px;
+
+  .scale {
+    height: 1px;
+    background-color: #9b8869;
+
+    .bar {
+      position: absolute;
+      left: 40px;
+      width: 48%;
+      height: 2px;
+      background-color: #817155;
+    }
+  }
+}
+
+.range-toggle-min {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: -2px;
+  left: 36px;
+  border-radius: 100%;
+  background: #817155;
+}
+
+.range-toggle-max {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: -2px;
+  left: 130px;
+  border-radius: 100%;
+  background: #817155;
+}
+
+.electro-bikes,
+.producer,
+.material,
+.color,
+.size,
+.wheels,
+.speed {
+  width: 100%;
+  position: relative;
+
+  p {
+    font-family: "Hagin Caps", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #9b8869;
+    margin: 0;
+  }
+
+  ul {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #9b8869;
+  }
+
+  button {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    right: 0;
+    background-image: url("../img/plus.svg");
+    margin: 0;
+  }
+}
