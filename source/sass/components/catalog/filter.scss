@@ -19,14 +19,11 @@
     top: 0;
     left: -28px;
     display: inline-block;
-    width: 27px;
-    height: 27px;
+    width: 16px;
+    height: 16px;
     margin-right: 9px;
     content: "";
-    background-image: url("../img/checkbox-off.svg");
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    opacity: 0.78;
+    border: 1px solid #9b8869;
   }
 }
 
@@ -104,6 +101,7 @@
 .speed {
   width: 100%;
   position: relative;
+  margin-bottom: 30px;
 
   p {
     font-family: "Hagin Caps", sans-serif;
@@ -123,6 +121,7 @@
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #9b8869;
+    margin-bottom: 15px;
   }
 
   li {
@@ -131,9 +130,9 @@
 
   input:checked + label::after {
     background-image: url("../img/checkbox-on.svg");
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-color: transparent;
   }
 
   button {
