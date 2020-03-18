@@ -24,30 +24,65 @@
 
 .item {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .item__img {
   width: 42%;
+  position: relative;
+  flex-basis: 50%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 353px;
+    height: 425px;
+    border: 6px solid #f0ede8;
+  }
 
   img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
     mix-blend-mode: multiply;
+    object-fit: cover;
+    z-index: 1;
   }
+}
+
+.item__description {
+  width: 52px;
+  flex-basis: 50%;
+}
+
+.item__controls {
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tumbler-1,
 .tumbler-2,
 .tumbler-3 {
   position: relative;
-  margin-right: 5px;
+  margin-right: 10px;
   width: 28px;
   height: 28px;
+  display: inline-block;
 }
 
 .tumbler-1::after {
   position: absolute;
-  content: "";
-  width: 28px;
-  height: 28px;
+  content: " ";
+  width: 18px;
+  height: 18px;
   top: 0;
   left: 0;
   background-size: 50% 50%;
@@ -58,9 +93,9 @@
 
 .tumbler-2::after {
   position: absolute;
-  content: "";
-  width: 28px;
-  height: 28px;
+  content: " ";
+  width: 18px;
+  height: 18px;
   top: 0;
   left: 0;
   background-size: 50%;
@@ -71,9 +106,9 @@
 
 .tumbler-3::after {
   position: absolute;
-  content: "";
-  width: 28px;
-  height: 28px;
+  content: " ";
+  width: 18px;
+  height: 18px;
   top: 0;
   left: 0;
   background-size: 50%;
