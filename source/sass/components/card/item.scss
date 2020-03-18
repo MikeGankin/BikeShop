@@ -56,8 +56,50 @@
 }
 
 .item__description {
-  width: 52px;
+  width: 52%;
   flex-basis: 50%;
+
+  h2 {
+    font-family: "Hagin Caps", sans-serif;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #817155;
+  }
+
+  .item__price {
+    font-family: "Hagin Caps", sans-serif;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #ba4f4f;
+  }
+
+  .item__rating {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #9b8869;
+  }
+
+  .item__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #817155;
+  }
+
+  .item__warranty {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #ba4f4f;
+  }
 }
 
 .item__controls {
@@ -117,6 +159,3 @@
   border-radius: 100%;
 }
 
-.item__description {
-  width: 52%;
-}

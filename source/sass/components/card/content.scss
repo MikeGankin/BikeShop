@@ -1,3 +1,44 @@
 .content {
   display: flex;
+  flex-direction: column;
+}
+
+.content__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-family: "Hagin Caps", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 0;
+
+  a {
+    text-decoration: none;
+    color: #817155;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #9b8869;
+  }
+
+  .description {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .conditions {
+    padding-left: 47px;
+    padding-right: 43px;
+  }
+
+  .reviews {
+    padding-left: 96px;
+    padding-right: 94px;
+  }
+
+  .overviews {
+    padding-left: 98px;
+    padding-right: 97px;
+  }
 }
