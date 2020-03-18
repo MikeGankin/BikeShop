@@ -28,6 +28,58 @@
 
 .item__img {
   width: 42%;
+
+  img {
+    mix-blend-mode: multiply;
+  }
+}
+
+.tumbler-1,
+.tumbler-2,
+.tumbler-3 {
+  position: relative;
+  margin-right: 5px;
+  width: 28px;
+  height: 28px;
+}
+
+.tumbler-1::after {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 28px;
+  top: 0;
+  left: 0;
+  background-size: 50% 50%;
+  background-color: #333232;
+  border: 2px solid #9b8869;
+  border-radius: 100%;
+}
+
+.tumbler-2::after {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 28px;
+  top: 0;
+  left: 0;
+  background-size: 50%;
+  background-color: #7e5b48;
+  border: 2px solid #9b8869;
+  border-radius: 100%;
+}
+
+.tumbler-3::after {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 28px;
+  top: 0;
+  left: 0;
+  background-size: 50%;
+  background-color: #d5b688;
+  border: 2px solid #9b8869;
+  border-radius: 100%;
 }
 
 .item__description {
