@@ -111,6 +111,12 @@
     text-decoration: none;
   }
 
+  .page-nav__link--backwards {
+    svg {
+      opacity: 60%;
+    }
+  }
+
   .active {
     color: #ba4f4f;
   }
