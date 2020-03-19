@@ -1,8 +1,5 @@
 'use strict';
 
-$('.bikes__list').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
+$(document).ready(function () {
+  $('.bikes__list').slick();
 });
-
