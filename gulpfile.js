@@ -32,11 +32,11 @@ gulp.task('css', function () {
 });
 
 gulp.task('js', function () {
-  return gulp.src('source/js/main.js')
+  return gulp.src('source/js/*.js')
       .pipe(uglify({
         toplevel: true
       }))
-      .pipe(rename('main.min.js'))
+      .pipe(rename('*.min.js'))
       .pipe(gulp.dest('build/js'));
 });
 
