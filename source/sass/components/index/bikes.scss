@@ -9,16 +9,28 @@
   position: relative;
   width: 82%;
   margin: 0 auto;
+  background-color: #e9e1d5;
 
   &::before {
     position: absolute;
     content: "";
-    width: 100%;
+    width: 38%;
     height: 1px;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    background-color: red;
+    background-color: #9b8869;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 38%;
+    height: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-color: #9b8869;
   }
 
   a {
@@ -60,19 +72,30 @@
 }
 
 .bikes__list {
-  width: 3000px;
+  width: 82%;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
   margin: 0 auto 71px;
+  position: relative;
+  min-height: 423px;
 }
 
 .bikes__item {
-  width: 31%;
+  position: absolute;
   display: flex;
-  position: relative;
   background-color: #e9e1d5;
+}
+
+.bikes__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 48px;
+
 
   &::before {
     content: "";
@@ -85,53 +108,56 @@
     border: 6px solid #f0ede8;
   }
 
-  img {
-    display: block;
-    width: 100%;
-    mix-blend-mode: multiply;
-    margin: 0 0 109px 0;
-    object-fit: cover;
-  }
-
   .link {
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 252px;
+
+    .img {
+      max-width: 100%;
+      mix-blend-mode: multiply;
+    }
   }
 
-  .link svg {
+  svg {
     position: absolute;
     top: 215px;
-    left: 50%;
-    transform: translate(-50%);
   }
 
-  .link h3 {
-    font-family: "Hagin Caps Medium", sans-serif;
+  .title {
+    width: 62%;
+    font-family: "Hagin Caps", sans-serif;
+    font-weight: 500;
     font-size: 24px;
-    width: 58%;
+    line-height: 30px;
     text-align: center;
     text-transform: uppercase;
-    margin: 0 auto;
     color: #817155;
+    margin-top: 45px;
+    margin-bottom: 11px;
   }
 
-  .link p {
+  .description {
+    width: 41%;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
+    line-height: 18px;
     text-align: center;
+    letter-spacing: 0.2px;
     color: #9b8869;
+    margin-top: 0;
+    margin-bottom: 12px;
   }
 
-  .link .description {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .link .cost {
-    font-family: "Hagin Caps Medium", sans-serif;
+  .cost {
+    font-family: "Hagin Caps", sans-serif;
+    font-weight: 500;
     font-size: 24px;
+    line-height: 30px;
+    text-align: center;
     text-transform: uppercase;
     color: #ba4f4f;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 
@@ -161,20 +187,3 @@
   cursor: pointer;
 }
 
-.bikes__slide-1,
-.bikes__slide-2,
-.bikes__slide-3 {
-  width: 57%;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  transform: translateX(-75%);
-}
-
-.bikes__slide-1 {
-  margin-right: 30px;
-}
-
-.bikes__slide-2 {
-  margin-right: 30px;
-}
