@@ -36,7 +36,8 @@ gulp.task('js', function () {
       .pipe(uglify({
         toplevel: true
       }))
-      .pipe(rename('*.min.js'))
+      .pipe(rename('slick.min.js'))
+      .pipe(rename('main.min.js'))
       .pipe(gulp.dest('build/js'));
 });
 
