@@ -9,6 +9,7 @@
   width: 100%;
   padding: 0;
   margin: 0 auto 71px;
+  list-style: none;
 }
 
 .bikes__link {
@@ -44,7 +45,7 @@
     z-index: 1;
     display: block;
     width: 20%;
-    font-family: "Hagin Caps Medium", sans-serif;
+    font-family: "Hagin Caps", sans-serif;
     font-size: 24px;
     text-transform: uppercase;
     text-decoration: none;

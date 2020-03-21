@@ -7,4 +7,10 @@ $(document).ready(function () {
     adaptiveHeight: true,
     initialSlide: 1,
   });
+  $('.accessories__list').slick({
+    easing: 'ease',
+    infinite: false,
+    adaptiveHeight: true,
+    initialSlide: 1,
+  });
 });
