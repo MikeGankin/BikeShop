@@ -97,7 +97,7 @@
   .link {
     display: flex;
     align-items: center;
-    height: 252px;
+    min-height: 252px;
 
     img {
       max-width: 100%;
@@ -125,7 +125,7 @@
   }
 
   .description {
-    width: 38%;
+    width: 40%;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 18px;
