@@ -24,16 +24,13 @@
 .main-nav {
   display: flex;
   width: 100%;
-  margin-top: 36px;
-  margin-bottom: 185px;
+  margin: 36px auto 185px auto;
+  justify-content: space-between;
 
   .main-nav__logo {
-    box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-right: 119px;
-    width: 23%;
   }
 }
 
@@ -42,14 +39,13 @@
 }
 
 .navigation-list {
+  width: 58%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  margin: 0;
+  margin: 0 118px 0 0;
   padding: 0;
-  width: 71%;
-  padding-right: 118px;
 
   .navigation-list__item {
     font-style: normal;
@@ -74,7 +70,7 @@
 .slogan-container {
   width: 37%;
   box-sizing: border-box;
-  margin: 0 0 198px 722px;
+  margin: 0 136px 198px auto;
   text-transform: uppercase;
 
   svg {
@@ -119,6 +115,8 @@
   list-style: none;
   padding: 0;
   margin-bottom: 34px;
+  width: 7%;
+  margin-left: auto;
 }
 
 .social-list__link--inst,
@@ -213,38 +211,13 @@
     padding: 0;
     margin: 0;
     z-index: 1;
-
-    .main-nav__hamburger-icon {
-      position: relative;
-      width: 18px;
-      height: 2px;
-      background-color: #9b8869;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: -5px;
-        left: 0;
-        width: 18px;
-        height: 2px;
-        background-color: #9b8869;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 5px;
-        left: 0;
-        width: 18px;
-        height: 2px;
-        background-color: #9b8869;
-      }
-    }
+    background-image: url();
   }
 
   .main-nav__logo {
     position: absolute;
-    left: 430px;
+    left: 380px;
+    top: 20px;
   }
 }
 
@@ -300,5 +273,10 @@
   .slogan-container {
     width: 246px;
     margin: 50px auto 0;
+  }
+
+  .login-list__link--chart {
+    position: absolute;
+    top: 10px;
   }
 }
