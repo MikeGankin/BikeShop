@@ -79,8 +79,8 @@
 .bikes__content {
   position: relative;
   display: inline-block;
-  margin: 0 auto;
   min-width: 0;
+  margin-right: 45px;
 
 
   &::before {
@@ -113,7 +113,7 @@
   }
 
   .title {
-    width: 62%;
+    width: 58%;
     font-family: "Hagin Caps", sans-serif;
     font-weight: 500;
     font-size: 24px;
@@ -125,7 +125,7 @@
   }
 
   .description {
-    width: 41%;
+    width: 38%;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 18px;
