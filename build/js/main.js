@@ -6,14 +6,15 @@ $(document).ready(function () {
     infinite: false,
     adaptiveHeight: true,
     initialSlide: 1,
-    centerMode: false,
+    centerMode: true,
+    centerPadding: '50px',
   });
   $('.accessories__list').slick({
     easing: 'ease',
     infinite: false,
     adaptiveHeight: true,
     initialSlide: 1,
-    centerMode: false,
+    centerMode: true,
+    centerPadding: '50px',
   });
 });
-
