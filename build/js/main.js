@@ -6,11 +6,14 @@ $(document).ready(function () {
     infinite: false,
     adaptiveHeight: true,
     initialSlide: 1,
+    centerMode: false,
   });
   $('.accessories__list').slick({
     easing: 'ease',
     infinite: false,
     adaptiveHeight: true,
     initialSlide: 1,
+    centerMode: false,
   });
 });
+

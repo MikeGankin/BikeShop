@@ -101,14 +101,10 @@
     justify-content: center;
     min-height: 252px;
 
-    .img {
+    img {
       max-width: 100%;
-      mix-blend-mode: multiply;
-      object-fit: contain;
-    }
-
-    .img-darken {
       mix-blend-mode: darken;
+      object-fit: contain;
     }
   }
 
