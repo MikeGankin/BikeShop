@@ -2,25 +2,37 @@
   display: flex;
 }
 
+.slik-slider {
+  position: relative;
+}
+
 .slick-list {
   overflow: hidden;
 }
 
-.slick-prv {
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 64px;
   width: 16px;
   height: 40px;
   font-size: 0;
-  background-image: url("../img/right-icon.svg");
+  background-image: url("../img/left-icon.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
 }
 
 .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 64px;
   width: 16px;
   height: 40px;
   font-size: 0;
-  background-image: url("../img/left-icon.svg");
+  background-image: url("../img/right-icon.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
