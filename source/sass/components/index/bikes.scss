@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+.bikes__item {
+  display: flex;
+}
+
 .bikes__link {
   position: relative;
   width: 82%;
