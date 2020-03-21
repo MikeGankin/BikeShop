@@ -5,3 +5,23 @@
 .slick-list {
   overflow: hidden;
 }
+
+.slick-prv {
+  width: 16px;
+  height: 40px;
+  font-size: 0;
+  background-image: url("../img/right-icon.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+}
+
+.slick-next {
+  width: 16px;
+  height: 40px;
+  font-size: 0;
+  background-image: url("../img/left-icon.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+}
