@@ -2,17 +2,27 @@
 
 $(document).ready(function () {
   $('.bikes__list').slick({
-    easing: 'ease',
-    infinite: false,
-    adaptiveHeight: true,
-    initialSlide: 1,
-    centerMode: false,
-  });
-  $('.accessories__list').slick({
-    easing: 'ease',
-    infinite: false,
-    adaptiveHeight: true,
-    initialSlide: 1,
-    centerMode: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1,
+          infinite: false,
+        }
+      }
+    ]
   });
 });

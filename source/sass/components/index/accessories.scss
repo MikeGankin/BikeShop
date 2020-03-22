@@ -1,151 +1,39 @@
 .accessories {
-  background-color: #e9e1d5;
-  padding-top: 80px;
-  padding-bottom: 60px;
-  position: relative;
-}
-
-.accessories__list {
-  width: 1637px;
-  list-style: none;
-  padding: 0;
-  margin: 0 auto 71px auto;
-}
-
-.accessories__link {
-  position: relative;
-  width: 82%;
+  padding-top: 56px;
+  min-height: 729px;
   margin: 0 auto;
-  background-color: #e9e1d5;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 38%;
-    height: 1px;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    background-color: #9b8869;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 38%;
-    height: 1px;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    background-color: #9b8869;
-  }
-
-  a {
-    position: relative;
-    z-index: 1;
-    display: block;
-    width: 20%;
-    font-family: "Hagin Caps", sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    color: #817155;
-    background-color: #e9e1d5;
-    border: 1px solid #9b8869;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin: 0 auto;
-  }
+  width: 90%;
 }
 
 .accessories__caption {
-  margin: 0 auto 28px;
-  width: 75%;
-  font-family: "Hagin Caps Medium", sans-serif;
-  font-size: 48px;
+  margin: 0 0 20px 0;
   text-align: center;
+  font-family: "Hagin Caps", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
   text-transform: uppercase;
   color: #817155;
 }
 
 .accessories__text {
-  margin: 0 auto 80px;
-  width: 54%;
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
   text-align: center;
+  letter-spacing: 0.2px;
   color: #817155;
 }
 
-.accessories__content {
-  position: relative;
-  display: inline-block;
-  min-width: 0;
-  background-color: #e9e1d5;
+.accessories__list {
+  list-style: none;
+  padding: 0;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    height: 240px;
-    width: 178px;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    border: 6px solid #f0ede8;
-  }
-
-  .link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 252px;
-
-    img {
-      max-width: 100%;
-      mix-blend-mode: darken;
-      object-fit: contain;
-    }
-  }
-
-  svg {
-    position: absolute;
-    top: 215px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .title {
-    width: 58%;
-    font-family: "Hagin Caps", sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #817155;
-    margin: 45px auto 11px;
-  }
-
-  .description {
-    width: 40%;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: #9b8869;
-    margin: 0 auto 12px;
-  }
-
-  .cost {
-    font-family: "Hagin Caps", sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ba4f4f;
-    margin: 0;
-  }
+.accessories__wrapper {
+  display: flex;
+  flex-direction: column;
 }
