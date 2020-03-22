@@ -1,5 +1,4 @@
-.workshop__content {
-  width: 90%;
+.workshop {
   min-height: 602px;
   margin: 0 auto;
   padding-top: 30px;
@@ -8,5 +7,15 @@
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
     background-image: url("../img/wsh-back-mobile@2x.jpg");
+  }
+}
+
+.workshop__content {
+  width: 90%;
+}
+
+.workshop__img {
+  img {
+    display: block;
   }
 }
