@@ -25,4 +25,29 @@ $(document).ready(function () {
       }
     ]
   });
+
+  $('.accessories__list').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1,
+          infinite: false,
+        }
+      }
+    ]
+  });
 });
