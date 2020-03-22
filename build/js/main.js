@@ -10,7 +10,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          infinite: false
         }
       },
       {
@@ -20,7 +19,6 @@ $(document).ready(function () {
           centerMode: true,
           centerPadding: '40px',
           slidesToShow: 1,
-          infinite: false,
         }
       }
     ]
@@ -35,7 +33,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          infinite: false
         }
       },
       {
@@ -45,7 +42,6 @@ $(document).ready(function () {
           centerMode: true,
           centerPadding: '40px',
           slidesToShow: 1,
-          infinite: false,
         }
       },
       {
