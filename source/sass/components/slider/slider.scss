@@ -1,5 +1,6 @@
 .slick-track {
   display: flex;
+  justify-content: space-between;
 }
 
 .slick-slider {
@@ -14,9 +15,9 @@
 
 .slick-prev {
   position: absolute;
-  top: 30%;
-  transform: translateY(-30%);
-  left: 64px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0x;
   width: 16px;
   height: 40px;
   font-size: 0;
@@ -29,9 +30,9 @@
 
 .slick-next {
   position: absolute;
-  top: 30%;
-  transform: translateY(-30%);
-  right: 64px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
   width: 16px;
   height: 40px;
   font-size: 0;

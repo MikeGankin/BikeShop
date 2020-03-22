@@ -42,7 +42,6 @@ $(document).ready(function () {
         breakpoint: 768,
         settings: {
           initialSlide: 4,
-          arrows: false,
           centerMode: true,
           centerPadding: '40px',
           slidesToShow: 1,
@@ -53,7 +52,6 @@ $(document).ready(function () {
         breakpoint: 320,
         settings: {
           initialSlide: 4,
-          arrows: false,
           centerMode: true,
           centerPadding: '40px',
           slidesToShow: 1,
