@@ -1,294 +1,89 @@
 .header-container {
-  width: 100%;
-  background-color: #e9e1d5;
-  min-height: 768px;
-  background-image: url("../img/bg-back-desktop@1x.jpg");
-  background-repeat: no-repeat;
-}
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
 
-.main-header__content {
-  font-family: "Hagin Caps Medium", sans-serif;
-  width: 100%;
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 93%;
+  width: 90%;
+  min-height: 568px;
   margin: 0 auto;
-  position: relative;
 }
 
-.main-nav {
-  display: flex;
-  width: 100%;
-  margin: 36px auto 185px auto;
-  justify-content: space-between;
+.main-header__content {
+  padding-top: 16px;
+}
 
-  .main-nav__logo {
-    display: flex;
-    align-items: center;
-    margin-right: 119px;
-  }
+// Временно скрываем навигацию
+
+.navigation-list,
+.login-list,
+.main-nav__logout,
+.social-list {
+  display: none;
+}
+
+//
+.main-nav {
+  position: relative;
+  min-height: 28px;
+  margin-bottom: 45px;
+}
+
+.main-nav__logo {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .main-nav__hamburger {
-  display: none;
+  width: 18px;
+  height: 12px;
+  background-image: url("../img/menu-closed.svg");
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
 }
 
-.navigation-list {
-  width: 58%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  margin: 0 118px 0 0;
-  padding: 0;
+.slogan {
+  width: 85%;
+  margin: 0 auto;
 
-  .navigation-list__item {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
-    &:last-child {
-      display: none;
-    }
-
-    a {
-      display: inline-block;
-      color: #9b8869;
-      text-decoration: none;
-    }
+  .slogan__logo {
+    margin-bottom: 136px;
   }
-}
-
-.slogan-container {
-  width: 37%;
-  box-sizing: border-box;
-  margin: 0 136px 198px auto;
-  text-transform: uppercase;
 
   svg {
-    margin-bottom: 61px;
     width: 100%;
+    height: auto;
   }
 }
 
-.shop-link {
-  width: 240px;
-  margin: 0 auto;
+.slogan__shop-link {
   text-decoration: none;
-  display: block;
+  text-transform: uppercase;
   text-align: center;
-  border: 1px solid #baa480;
+  display: block;
   box-sizing: border-box;
+  width: 98%;
+  margin: 0 auto;
+  font-family: "Hagin Caps", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: #baa480;
+  background: rgba(26, 25, 24, 0.8);
+  border: 1px solid #baa480;
   padding: 20px 0 16px 0;
-  color: #9b8869;
-}
-
-.login-list {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  width: 9%;
-  padding: 0;
-}
-
-.login-list__user-name {
-  display: none;
-}
-
-.login-list__link--search {
-  span {
-    display: none;
-  }
-}
-
-.social-list {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  padding: 0;
-  margin-bottom: 34px;
-  width: 7%;
-  margin-left: auto;
-}
-
-.social-list__link--inst,
-.social-list__link--fb {
-  margin-left: 25px;
-}
-
-.main-nav__logout {
-  display: none;
-}
-
-@media (max-width: $mobile-width) {
-  .header-container {
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    min-height: 568px;
-  }
-}
-
-@media (max-width: $mobile-width) {
-  .main-header {
-    width: 288px;
-    min-height: 334px;
-  }
-}
-
-@media (max-width: $mobile-width) {
-  .login-list__item:nth-child(1) {
-    position: absolute;
-    top: 20px;
-    left: 80px;
-
-    svg {
-      width: 12px;
-      height: 13px;
-    }
-  }
-
-  .login-list__item:nth-child(2) {
-    margin-left: 30px;
-    position: relative;
-  }
-
-  .login-list__item:last-child {
-    position: absolute;
-    top: 15px;
-    left: 590px;
-  }
-
-  .login-list__user-name {
-    display: block;
-    font-family: "Roboto Regular", sans-serif;
-    font-size: 16px;
-    line-height: 19px;
-    color: #9b8869;
-  }
-
-  .login-list__link--login {
-    margin-right: 10px;
-    text-decoration: none;
-  }
-
-  .login-list__link--search {
-    text-decoration: none;
-    text-transform: uppercase;
-
-    span {
-      display: block;
-      color: #9b8869;
-      position: absolute;
-      top: 0;
-      left: 26px;
-    }
-  }
-}
-
-@media (max-width: $mobile-width) {
-  .main-nav {
-    width: 304px;
-    display: block;
-    background-color: #f0ede8;
-    min-height: 568px;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    right: 310px;
-  }
-
-  .main-nav__hamburger {
-    display: block;
-    position: absolute;
-    top: 28px;
-    width: 18px;
-    height: 13px;
-    padding: 0;
-    margin: 0;
-    z-index: 1;
-    background-image: url("../img/menu-closed.svg");
-    background-repeat: no-repeat;
-    background-color: transparent;
-    border: none;
-  }
-
-  .main-nav__logo {
-    position: absolute;
-    left: 380px;
-    top: 20px;
-  }
-}
-
-@media (max-width: $mobile-width) {
-  .navigation-list {
-    width: 245px;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 30px;
-    margin-top: 51px;
-    position: relative;
-    padding: 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      top: 240px;
-      background-color: #9b8869;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      top: 298px;
-      background-color: #9b8869;
-    }
-  }
-
-  .navigation-list__item {
-    margin-bottom: 20px;
-
-    &:last-child {
-      margin-top: 20px;
-    }
-  }
-
-  .main-nav__logout {
-    display: block;
-    padding: 0;
-    position: absolute;
-    top: 17px;
-    right: 20px;
-  }
-
-  .social-list {
-    display: none;
-  }
-
-  .slogan-container {
-    width: 246px;
-    margin: 50px auto 0;
-
-    svg {
-      margin-bottom: 61px;
-    }
-  }
-
-  .login-list__link--chart {
-    position: absolute;
-    top: 10px;
-  }
-
-  .shop-link {
-    background-color: rgba(26, 25, 24, 0.8);
-  }
+  cursor: pointer;
 }

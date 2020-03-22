@@ -52,7 +52,6 @@
 }
 
 .footer__info {
-  width: 25%;
   display: flex;
   justify-content: space-between;
 
@@ -84,5 +83,11 @@
     letter-spacing: 0.2px;
     color: #baa480;
     text-decoration: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer-nav {
+    display: none;
   }
 }

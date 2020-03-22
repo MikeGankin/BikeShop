@@ -1,185 +1,81 @@
 .bikes {
-  background-color: #e9e1d5;
-  padding-top: 80px;
-  padding-bottom: 60px;
-  position: relative;
+  width: 90%;
+  min-height: 766px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.bikes__caption {
+  font-family: "Hagin Caps Medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #817155;
+  margin: 0 0 22px 0;
+}
+
+.bikes__text {
+  width: 97%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #817155;
+  margin: 0 auto 30px;
 }
 
 .bikes__list {
-  width: 100%;
-  padding: 0;
-  margin: 0 auto 71px;
   list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
 }
 
 .bikes__link {
+  margin-bottom: 43px;
   position: relative;
-  width: 82%;
-  margin: 0 auto;
-  background-color: #e9e1d5;
 
   &::before {
-    position: absolute;
     content: "";
-    width: 38%;
-    height: 1px;
+    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     left: 0;
+    width: 40px;
+    height: 1px;
     background-color: #9b8869;
   }
 
   &::after {
-    position: absolute;
     content: "";
-    width: 38%;
-    height: 1px;
+    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     right: 0;
+    width: 40px;
+    height: 1px;
     background-color: #9b8869;
   }
 
   a {
-    position: relative;
-    z-index: 1;
+    width: 68%;
+    margin: 0 auto;
     display: block;
-    width: 20%;
-    font-family: "Hagin Caps", sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
+    box-sizing: border-box;
     text-decoration: none;
     text-align: center;
-    color: #817155;
-    background-color: #e9e1d5;
-    border: 1px solid #9b8869;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin: 0 auto;
-  }
-}
-
-.bikes__caption {
-  margin: 0 auto 28px;
-  width: 75%;
-  font-family: "Hagin Caps Medium", sans-serif;
-  font-size: 48px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #817155;
-}
-
-.bikes__text {
-  margin: 0 auto 80px;
-  width: 54%;
-  font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  text-align: center;
-  color: #817155;
-}
-
-.bikes__content {
-  position: relative;
-  display: inline-block;
-  min-width: 0;
-  background-color: #e9e1d5;
-
-  &::before {
-    content: "";
-    position: absolute;
-    height: 240px;
-    width: 178px;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    border: 6px solid #f0ede8;
-  }
-
-  .link {
-    display: flex;
-    align-items: center;
-    min-height: 252px;
-
-    img {
-      max-width: 100%;
-      mix-blend-mode: multiply;
-      object-fit: contain;
-    }
-  }
-
-  svg {
-    position: absolute;
-    top: 215px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .title {
-    width: 58%;
-    font-family: "Hagin Caps", sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
     text-transform: uppercase;
-    color: #817155;
-    margin: 45px auto 11px;
-  }
-
-  .description {
-    width: 40%;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: #9b8869;
-    margin: 0 auto 12px;
-  }
-
-  .cost {
     font-family: "Hagin Caps", sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ba4f4f;
-    margin: 0;
-  }
-}
-
-.bikes__content--bike1 {
-  margin-left: 23px;
-  margin-right: 48px;
-}
-
-.bikes__content--bike2 {
-  margin-right: 48px;
-}
-
-.bikes__content--bike3 {
-  margin-right: 23px;
-}
-
-@media (max-width: $mobile-width) {
-  .bikes {
-    padding-top: 30px;
-  }
-
-  .bikes__caption {
-    font-size: 22px;
-    font-weight: 300;
-    width: 80%;
-  }
-
-  .bikes__text {
-    width: 88%;
     font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: #817155;
+    border: 1px solid #9b8869;
+    padding: 16px 0 15px 0;
+    cursor: pointer;
   }
 }
