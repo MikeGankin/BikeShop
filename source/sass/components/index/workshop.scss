@@ -74,3 +74,46 @@
     padding-bottom: 15px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .workshop {
+    padding-top: 30px;
+    padding-bottom: 26px;
+  }
+
+  .workshop__content {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .workshop__text {
+    width: 100%;
+
+    h2 {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  .workshop__first-paragraph {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .workshop__second-paragraph {
+    width: 90%;
+    margin: 0 auto 30px;
+  }
+}

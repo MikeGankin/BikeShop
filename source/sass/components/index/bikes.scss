@@ -161,3 +161,25 @@
 .bikes__content--bike3 {
   margin-right: 23px;
 }
+
+@media (max-width: $mobile-width) {
+  .bikes {
+    padding-top: 30px;
+  }
+
+  .bikes__caption {
+    font-size: 22px;
+    font-weight: 300;
+    width: 80%;
+  }
+
+  .bikes__text {
+    width: 88%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-bottom: 30px;
+  }
+}

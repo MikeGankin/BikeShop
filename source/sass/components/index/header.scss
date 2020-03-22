@@ -4,7 +4,6 @@
   min-height: 768px;
   background-image: url("../img/bg-back-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .main-header__content {
@@ -131,12 +130,14 @@
 @media (max-width: $mobile-width) {
   .header-container {
     background-image: url("../img/bg-back-mobile@1x.jpg");
+    min-height: 568px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .main-header {
     width: 288px;
+    min-height: 334px;
   }
 }
 
@@ -205,13 +206,16 @@
   .main-nav__hamburger {
     display: block;
     position: absolute;
-    top: 20px;
+    top: 28px;
     width: 18px;
     height: 13px;
     padding: 0;
     margin: 0;
     z-index: 1;
-    background-image: url();
+    background-image: url("../img/menu-closed.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
   }
 
   .main-nav__logo {
@@ -273,10 +277,18 @@
   .slogan-container {
     width: 246px;
     margin: 50px auto 0;
+
+    svg {
+      margin-bottom: 61px;
+    }
   }
 
   .login-list__link--chart {
     position: absolute;
     top: 10px;
+  }
+
+  .shop-link {
+    background-color: rgba(26, 25, 24, 0.8);
   }
 }
