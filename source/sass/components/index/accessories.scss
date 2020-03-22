@@ -1,6 +1,5 @@
 .accessories {
   padding-top: 56px;
-  min-height: 729px;
   margin: 0 auto;
   width: 90%;
 }
@@ -34,6 +33,115 @@
 }
 
 .accessories__wrapper {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  padding-top: 45px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 178px;
+    height: 178px;
+    border: 6px solid #f0ede8;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .link {
+    display: block;
+    margin-bottom: 89px;
+
+    img {
+      mix-blend-mode: multiply;
+    }
+  }
+
+  .chart-add {
+    width: 100%;
+    top: 153px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .title {
+    width: 90%;
+    font-family: "Hagin Caps", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #817155;
+    margin: 0 auto 9px;
+  }
+
+  .description {
+    width: 80%;
+    margin: 0 auto 10px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #9b8869;
+  }
+
+  .cost {
+    font-family: "Hagin Caps", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ba4f4f;
+    margin: 0;
+  }
+}
+
+.accessories__link {
+  margin-bottom: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    background-color: #9b8869;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 40px;
+    height: 1px;
+    background-color: #9b8869;
+  }
+
+  a {
+    width: 68%;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Hagin Caps", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: #817155;
+    border: 1px solid #9b8869;
+    padding: 16px 0 15px 0;
+    cursor: pointer;
+  }
 }
