@@ -1,1 +1,60 @@
+.inclab {
+  margin-bottom: 30px;
+}
 
+.inclab__content {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.inclub__text {
+  h2 {
+    font-family: "Hagin Caps", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #baa480;
+    margin: 0 0 20px 0;
+  }
+
+  p{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #e9e1d5;
+  }
+
+  a {
+    display: block;
+    width: 68%;
+    border: 1px solid #baa480;
+    box-sizing: border-box;
+    padding: 16px 0 13px 0;
+    margin: 0 auto 30px;
+    text-decoration: none;
+    font-family: "Hagin Caps", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #baa480;
+  }
+}
+
+.inclub__first-paragraph {
+  margin: 0 0 18px 0;
+}
+
+.inclub__second-paragraph {
+  margin: 0 0 30px 0;
+}
