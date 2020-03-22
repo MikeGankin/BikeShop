@@ -1,5 +1,10 @@
 .footer-container {
-  background-image: url("../img/footer-bg-desktop@1x.jpg");
+  background-image: url("../img/footer-bg-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../img/footer-bg-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .footer-nav__list {
@@ -88,5 +93,23 @@
 @media (max-width: $mobile-width) {
   .footer-nav {
     display: none;
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content__logo {
+  width: 100%;
+  order: -1;
+}
+
+.footer-content__list {
+  width: 34%;
+
+  svg {
+    fill: #baa480;
   }
 }

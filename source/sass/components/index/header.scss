@@ -1,9 +1,9 @@
 .header-container {
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
   }
 }
 
