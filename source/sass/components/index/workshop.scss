@@ -12,10 +12,40 @@
 
 .workshop__content {
   width: 90%;
+  margin: 0 auto;
 }
 
 .workshop__img {
   img {
+    max-width: 100%;
     display: block;
+  }
+}
+
+.workshop__text {
+  h2 {
+    font-family: "Hagin Caps", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #baa480;
+  }
+
+  p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #e9e1d5;
+  }
+
+  a {
+    display: none;
   }
 }
