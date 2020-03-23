@@ -2,6 +2,11 @@
 
 $(document).ready(function () {
   $('.bikes__list').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: false,
+    adaptiveHeight: true,
+
     responsive: [
       {
         breakpoint: 1024,
@@ -35,6 +40,11 @@ $(document).ready(function () {
   });
 
   $('.accessories__list').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: false,
+    adaptiveHeight: true,
+
     responsive: [
       {
         breakpoint: 1024,

@@ -153,3 +153,40 @@
     cursor: pointer;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .bikes {
+    padding-top: 80px;
+  }
+
+  .bikes__caption {
+    font-family: "Hagin Caps", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #817155;
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+
+  .bikes__text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #817155;
+    width: 65%;
+    margin-bottom: 80px;
+  }
+
+  .bikes__wrapper::after {
+    width: 178px;
+    height: 240px;
+  }
+}
