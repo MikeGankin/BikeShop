@@ -15,7 +15,7 @@
 }
 
 .main-header__content {
-  padding-top: 16px;
+  padding-top: 83px;
 }
 
 .main-nav {
@@ -27,6 +27,8 @@
   margin-bottom: 45px;
   background-color: #f0ede8;
   z-index: 1;
+  transform: translateX(-100%);
+  transition: all 0.3s ease 0s;
 }
 
 .navigation-list {
@@ -113,7 +115,9 @@
 }
 
 .login-list__item--chart {
-  display: none;
+  position: absolute;
+  top: 16px;
+  left: 580px;
 }
 
 .main-nav__logout {
@@ -124,15 +128,15 @@
   margin: 0;
 }
 
-.main-nav__logo {
+.main-header__logo {
   display: inline-block;
   position: absolute;
-  top: 0;
-  left: 50%;
+  top: 16px;
+  left: 160px;
   transform: translateX(-50%);
 }
 
-.main-nav__hamburger {
+.main-header__hamburger {
   position: absolute;
   box-sizing: border-box;
   width: 18px;
@@ -177,7 +181,7 @@
   }
 }
 
-.opened {
+.clicked {
   span {
     transform: scale(0);
   }
@@ -193,7 +197,11 @@
   }
 }
 
-.clicked {
+.opened {
+  transform: translateX(0);
+}
+
+.slogan {
   width: 85%;
   margin: 0 auto;
 
@@ -226,4 +234,8 @@
   border: 1px solid #baa480;
   padding: 20px 0 16px 0;
   cursor: pointer;
+}
+
+.social-list {
+  display: none;
 }
