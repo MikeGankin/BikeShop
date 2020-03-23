@@ -2,8 +2,8 @@
 
 $(document).ready(function () {
   $('.bikes__list').slick({
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     dots: false,
     adaptiveHeight: true,
 
@@ -40,8 +40,8 @@ $(document).ready(function () {
   });
 
   $('.accessories__list').slick({
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     dots: false,
     adaptiveHeight: true,
 

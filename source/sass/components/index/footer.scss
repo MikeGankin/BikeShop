@@ -92,3 +92,32 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer-nav {
+    display: block;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .footer-content__logo {
+      order: 0;
+      width: 18%;
+    }
+
+    .footer-content__list {
+      width: 9%;
+    }
+  }
+
+  .footer__info {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      order: -1;
+    }
+  }
+}
