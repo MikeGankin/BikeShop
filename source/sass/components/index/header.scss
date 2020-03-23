@@ -18,11 +18,8 @@
   padding-top: 16px;
 }
 
-.navigation-list {
-}
-
 .main-nav {
-  width: 100%;
+  width: 95%;
   position: absolute;
   top: 0;
   left: 0;
@@ -30,6 +27,101 @@
   margin-bottom: 45px;
   background-color: #f0ede8;
   z-index: 1;
+}
+
+.navigation-list {
+  list-style: none;
+  margin-top: 88px;
+  font-family: "Hagin Caps", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-left: 30px;
+  width: 79%;
+
+  a {
+    text-decoration: none;
+    color: #9b8869;
+    cursor: pointer;
+  }
+}
+
+.navigation-list__item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    border-top: 1px solid #9b8869;
+    border-bottom: 1px solid #9b8869;
+    padding: 20px 0 20px 0;
+  }
+}
+
+.login-list {
+  list-style: none;
+  padding-left: 30px;
+  width: 79%;
+  font-family: "Hagin Caps", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    text-transform: none;
+    color: #9b8869;
+    cursor: pointer;
+    display: inline-block;
+  }
+}
+
+.login-list__item--login {
+  position: absolute;
+  top: 18px;
+  left: 80px;
+
+  a {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    color: #9b8869;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  svg {
+    width: 12px;
+    height: 13px;
+  }
+}
+
+.login-list__item--search {
+
+  svg {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.login-list__item--chart {
+  display: none;
+}
+
+.main-nav__logout {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 .main-nav__logo {
@@ -47,9 +139,8 @@
   height: 12px;
   background-color: transparent;
   border: none;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
+  top: 20px;
+  left: 15px;
   padding: 0;
   z-index: 2;
 
