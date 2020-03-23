@@ -239,3 +239,30 @@
 .social-list {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .header-container {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: cover;
+    background-position: center;
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .main-header__content {
+    padding-top: 120px;
+  }
+
+  .main-header__logo {
+    top: 17px;
+    left: 50%;
+  }
+
+  .main-header__hamburger {
+    top: 25px;
+    left: 25px;
+  }
+}
