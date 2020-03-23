@@ -42,3 +42,9 @@
   border: none;
   z-index: 1;
 }
+
+@media (min-width: $desktop-width) {
+  .slick-slider {
+    margin-bottom: 61px;
+  }
+}

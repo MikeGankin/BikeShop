@@ -185,8 +185,30 @@
     margin-bottom: 80px;
   }
 
-  .bikes__wrapper::after {
-    width: 178px;
-    height: 240px;
+  .bikes__wrapper {
+    padding-top: 50px;
+
+    &::after {
+      width: 178px;
+      height: 240px;
+    }
+
+    a {
+      margin-bottom: 30px;
+    }
+  }
+
+  .bikes__link {
+    width: 82%;
+    margin: 0 auto 95px;
+
+    a {
+      width: 24%;
+    }
+
+    &::before,
+    &::after {
+      width: 350px;
+    }
   }
 }
