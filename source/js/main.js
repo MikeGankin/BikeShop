@@ -57,7 +57,7 @@ $(document).ready(function () {
   });
 
   $('.main-nav__hamburger').click(function (event) {
-    $('.main-nav__hamburger').toggleClass('opened');
+    $('.main-nav__hamburger').toggleClass('clicked');
     $('.main-nav').toggleClass('opened');
   });
 });
