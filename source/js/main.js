@@ -59,6 +59,5 @@ $(document).ready(function () {
   $('.main-header__hamburger').click(function (event) {
     $('.main-header__hamburger').toggleClass('clicked');
     $('.main-nav').toggleClass('opened');
-    $('.login-list__item--chart').toggleClass('opened');
   });
 });
