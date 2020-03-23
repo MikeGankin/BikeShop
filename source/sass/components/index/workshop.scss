@@ -63,3 +63,18 @@
 .workshop__second-paragraph {
   margin: 0 0 30px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .workshop {
+    min-height: 0;
+    padding-bottom: 30px;
+  }
+
+  .workshop__img {
+    position: relative;
+
+    img {
+      margin: 0 auto;
+    }
+  }
+}
