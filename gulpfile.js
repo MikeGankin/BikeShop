@@ -2,7 +2,7 @@
 'use strict';
 
 var gulp = require('gulp');
-// var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify');
 var plumber = require('gulp-plumber');
 var sourcemap = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
