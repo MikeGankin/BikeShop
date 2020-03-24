@@ -116,8 +116,8 @@
 
 .login-list__item--chart {
   position: absolute;
-  top: 16px;
-  left: 580px;
+  top: 18px;
+  left: 588px;
 }
 
 .main-nav__logout {
@@ -129,11 +129,17 @@
 }
 
 .main-header__logo {
-  display: inline-block;
+  width: 40%;
+  display: block;
+  box-sizing: border-box;
   position: absolute;
-  top: 16px;
+  top: 12px;
   left: 160px;
   transform: translateX(-50%);
+
+  svg {
+    width: 100%;
+  }
 }
 
 .main-header__hamburger {
@@ -143,7 +149,7 @@
   height: 12px;
   background-color: transparent;
   border: none;
-  top: 20px;
+  top: 21px;
   left: 15px;
   padding: 0;
   z-index: 2;
@@ -206,12 +212,13 @@
   margin: 0 auto;
 
   .slogan__logo {
-    margin-bottom: 136px;
+    margin-bottom: 133px;
   }
 
   svg {
     width: 100%;
     height: auto;
+    padding-left: 3px;
   }
 }
 
@@ -232,7 +239,7 @@
   color: #baa480;
   background: rgba(26, 25, 24, 0.8);
   border: 1px solid #baa480;
-  padding: 20px 0 16px 0;
+  padding: 19px 0 13px 0;
   cursor: pointer;
 }
 

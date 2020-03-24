@@ -1,7 +1,7 @@
 .bikes {
   width: 90%;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 27px;
 }
 
 .bikes__caption {
@@ -13,7 +13,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #817155;
-  margin: 0 0 22px 0;
+  margin: 0 0 11px 0;
 }
 
 .bikes__text {
@@ -110,16 +110,16 @@
 }
 
 .bikes__link {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   position: relative;
   display: block;
 
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 24px;
     left: 0;
-    width: 40px;
+    width: 39px;
     height: 1px;
     background-color: #9b8869;
   }
@@ -127,9 +127,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 24px;
     right: 0;
-    width: 40px;
+    width: 39px;
     height: 1px;
     background-color: #9b8869;
   }
@@ -149,7 +149,7 @@
     line-height: 30px;
     color: #817155;
     border: 1px solid #9b8869;
-    padding: 16px 0 15px 0;
+    padding: 12px 0 8px 0;
     cursor: pointer;
   }
 }

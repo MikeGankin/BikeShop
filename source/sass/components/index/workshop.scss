@@ -1,6 +1,6 @@
 .workshop {
   position: relative;
-  min-height: 602px;
+  min-height: 546px;
   margin: 0 auto;
   padding-top: 30px;
   background-image: url("../img/wsh-back-mobile@1x.jpg");
@@ -18,7 +18,7 @@
 
 .workshop__img {
   position: absolute;
-  top: 54%;
+  top: 302px;
   z-index: 1;
 
   img {
@@ -37,7 +37,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #baa480;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
   }
 
   p {
@@ -57,7 +57,7 @@
 }
 
 .workshop__first-paragraph {
-  margin: 0 0 18px 0;
+  margin: 0 0 10px 0;
 }
 
 .workshop__second-paragraph {
