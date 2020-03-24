@@ -2,7 +2,7 @@
 'use strict';
 
 var gulp = require('gulp');
-var uglify = require('gulp-uglify');
+// var uglify = require('gulp-uglify');
 var plumber = require('gulp-plumber');
 var sourcemap = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
@@ -18,6 +18,15 @@ var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var del = require('del');
 
+gulp.task('html', function () {
+  return gulp.src('source/*.html')
+      .pipe(posthtml([
+        include()
+      ]))
+      .pipe(gulp.dest('source'));
+      // Заменить на билд //
+});
+
 gulp.task('css', function () {
   return gulp.src('source/sass/style.scss')
       .pipe(plumber())
@@ -27,23 +36,25 @@ gulp.task('css', function () {
       .pipe(csso())
       .pipe(rename('style.min.css'))
       .pipe(sourcemap.write('.'))
-      .pipe(gulp.dest('build/css'))
+      .pipe(gulp.dest('source/css'))
+      // Заменить на билд
       .pipe(server.stream());
 });
 
 gulp.task('js', function () {
-  return gulp.src('source/js/*.js')
+  return gulp.src('source/js/main.js')
       .pipe(uglify({
         toplevel: true
       }))
-      .pipe(rename('slick.min.js'))
       .pipe(rename('main.min.js'))
-      .pipe(gulp.dest('build/js'));
+      .pipe(gulp.dest('source/js'));
+      // Заменить на билд
 });
 
 gulp.task('server', function () {
   server.init({
-    server: 'build/',
+    server: 'source/',
+    // Заменить на билд
     notify: false,
     open: true,
     cors: true,
@@ -91,15 +102,8 @@ gulp.task('sprite', function () {
         inlineSvg: true
       }))
       .pipe(rename('sprite_auto.svg'))
-      .pipe(gulp.dest('build/img'));
-});
-
-gulp.task('html', function () {
-  return gulp.src('source/*.html')
-      .pipe(posthtml([
-        include()
-      ]))
-      .pipe(gulp.dest('build'));
+      .pipe(gulp.dest('source/img'));
+      // Заменить на билд
 });
 
 gulp.task('copy', function () {
@@ -119,5 +123,5 @@ gulp.task('clean', function () {
   return del('build');
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'js', 'css', 'sprite', 'html'));
-gulp.task('start', gulp.series('build', 'server'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html'));
+gulp.task('start', gulp.series('css', 'server'));
