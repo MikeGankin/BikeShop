@@ -1,24 +1,24 @@
+.slick-slider {
+  min-width: 0;
+  position: relative;
+  margin-bottom: 33px;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
 .slick-track {
   display: flex;
   justify-content: space-between;
-}
-
-.slick-slider {
-  width: 100%;
-  position: relative;
-  margin-bottom: 33px;
-  max-height: 348px;
-}
-
-.slick-slide {
-  text-align: center;
+  align-items: flex-start;
 }
 
 .slick-prev {
   position: absolute;
   top: 73%;
   transform: translateY(-73%);
-  left: 0x;
+  left: 0;
   width: 16px;
   height: 40px;
   font-size: 0;

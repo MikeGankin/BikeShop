@@ -115,9 +115,10 @@
 }
 
 .login-list__item--chart {
-  position: absolute;
+  position: relative;
   top: 18px;
   left: 588px;
+  display: none;
 }
 
 .main-nav__logout {
@@ -245,6 +246,13 @@
 
 .social-list {
   display: none;
+}
+
+.main-header__chart {
+  position: absolute;
+  display: block;
+  top: 17px;
+  right: 14px;
 }
 
 @media (min-width: $tablet-width) {

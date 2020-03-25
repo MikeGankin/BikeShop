@@ -2,16 +2,13 @@
 
 $(document).ready(function () {
   $('.bikes__list').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: false,
-    adaptiveHeight: true,
-
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    infinite: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          initialSlide: 4,
           slidesToShow: 3,
           slidesToScroll: 3,
         }
@@ -19,59 +16,15 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
-          initialSlide: 4,
-          centerMode: true,
-          centerPadding: '40px',
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 2
         }
       },
       {
         breakpoint: 320,
         settings: {
-          initialSlide: 4,
-          centerMode: true,
-          centerPadding: '40px',
           slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      }
-    ]
-  });
-
-  $('.accessories__list').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: false,
-    adaptiveHeight: true,
-
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          initialSlide: 4,
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          initialSlide: 4,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        }
-      },
-      {
-        breakpoint: 320,
-        settings: {
-          initialSlide: 4,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToScroll: 1
         }
       }
     ]
