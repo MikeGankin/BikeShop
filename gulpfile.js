@@ -24,7 +24,7 @@ gulp.task('html', function () {
         include()
       ]))
       .pipe(gulp.dest('source'));
-      // Заменить на билд //
+  // Заменить на билд //
 });
 
 gulp.task('css', function () {
@@ -48,7 +48,7 @@ gulp.task('js', function () {
       }))
       .pipe(rename('main.min.js'))
       .pipe(gulp.dest('source/js'));
-      // Заменить на билд
+  // Заменить на билд
 });
 
 gulp.task('server', function () {
@@ -103,7 +103,7 @@ gulp.task('sprite', function () {
       }))
       .pipe(rename('sprite_auto.svg'))
       .pipe(gulp.dest('source/img'));
-      // Заменить на билд
+  // Заменить на билд
 });
 
 gulp.task('copy', function () {
