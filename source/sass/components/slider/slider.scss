@@ -1,7 +1,7 @@
 .slick-slider {
   min-width: 0;
   position: relative;
-  margin-bottom: 33px;
+  margin-bottom: -39px;
 }
 
 .slick-list {
@@ -10,13 +10,11 @@
 
 .slick-track {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 
 .slick-prev {
   position: absolute;
-  top: 73%;
+  top: 263px;
   transform: translateY(-73%);
   left: 0;
   width: 16px;
@@ -31,7 +29,7 @@
 
 .slick-next {
   position: absolute;
-  top: 73%;
+  top: 263px;
   transform: translateY(-73%);
   right: 0;
   width: 16px;
