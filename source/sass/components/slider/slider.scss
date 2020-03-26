@@ -10,11 +10,12 @@
 
 .slick-track {
   display: flex;
+  align-items: flex-start;
 }
 
 .slick-prev {
   position: absolute;
-  top: 263px;
+  top: 257px;
   transform: translateY(-73%);
   left: 0;
   width: 16px;
@@ -29,7 +30,7 @@
 
 .slick-next {
   position: absolute;
-  top: 263px;
+  top: 257px;
   transform: translateY(-73%);
   right: 0;
   width: 16px;

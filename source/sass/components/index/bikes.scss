@@ -26,7 +26,7 @@
   text-align: center;
   letter-spacing: 0.2px;
   color: #817155;
-  margin: 0 auto 30px;
+  margin: 0 auto 36px;
 }
 
 .bikes__list {
@@ -38,10 +38,14 @@
 }
 
 .bikes__wrapper {
-  width: 70%;
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #e9e1d5;
+  height: 348px;
+  margin-bottom: 69px;
 
   &::after {
     content: "";
@@ -57,7 +61,10 @@
   svg {
     position: relative;
     z-index: 1;
-    top: -13px;
+    top: -18px;
+    margin: 0 auto;
+    width: 54px;
+    height: 54px;
   }
 
   .chart-add {
@@ -68,17 +75,18 @@
   }
 
   .link {
-    display: block;
 
     img {
-      mix-blend-mode: multiply;
+      position: relative;
+      z-index: 1;
       max-width: 100%;
       height: auto;
+      mix-blend-mode: multiply;
     }
   }
 
   .title {
-    width: 53%;
+    width: 52%;
     font-family: "Hagin Caps", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -87,12 +95,15 @@
     text-align: center;
     text-transform: uppercase;
     color: #817155;
-    margin: -13px auto 9px;
+    margin: 0;
+  }
+
+  .new-width {
+    width: 60%;
   }
 
   .description {
-    width: 58%;
-    margin: -7px auto 8px;
+    width: 37%;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -101,6 +112,7 @@
     text-align: center;
     letter-spacing: 0.2px;
     color: #9b8869;
+    margin: 0;
   }
 
   .cost {
@@ -112,7 +124,8 @@
     text-align: center;
     text-transform: uppercase;
     color: #ba4f4f;
-    margin: 0;
+    margin-bottom: -8px;
+    margin-top: 9px;
   }
 }
 

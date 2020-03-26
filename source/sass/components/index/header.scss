@@ -52,12 +52,12 @@
 }
 
 .navigation-list__item {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   &:last-child {
     border-top: 1px solid #9b8869;
     border-bottom: 1px solid #9b8869;
-    padding: 20px 0 20px 0;
+    padding: 18px 0 18px 0;
   }
 }
 
@@ -85,7 +85,7 @@
 .login-list__item--login {
   position: absolute;
   top: 18px;
-  left: 80px;
+  left: 85px;
 
   a {
     font-family: "Roboto", sans-serif;
@@ -100,17 +100,35 @@
   }
 
   svg {
+    margin: 0 0 -2px -5px;
     width: 12px;
     height: 13px;
+  }
+
+  span {
+    margin: 0 0 0 5px;
   }
 }
 
 .login-list__item--search {
+  margin-top: -4px;
+  position: relative;
+
+  a {
+    padding-top: 5px;
+  }
 
   svg {
-    margin-right: 10px;
+    position: absolute;
+    top: 6px;
+    left: 0;
     width: 16px;
     height: 16px;
+  }
+
+  span {
+    text-transform: uppercase;
+    padding-left: 26px;
   }
 }
 
@@ -123,8 +141,8 @@
 
 .main-nav__logout {
   position: absolute;
-  top: 20px;
-  right: 15px;
+  top: 19px;
+  right: 14px;
   padding: 0;
   margin: 0;
 }
@@ -151,7 +169,7 @@
   background-color: transparent;
   border: none;
   top: 21px;
-  left: 15px;
+  left: 13px;
   padding: 0;
   z-index: 2;
 
