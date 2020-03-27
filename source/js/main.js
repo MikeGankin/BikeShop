@@ -48,7 +48,69 @@ $(document).ready(function () {
   });
 
   $('.header__hamburger').click(function (event) {
-    $('.header__hamburger').toggleClass('clicked');
-    $('.nav').toggleClass('opened');
+    event.preventDefault();
+    $('.header__hamburger').toggleClass('hamburger-clicked');
+    $('.nav').toggleClass('nav-opened');
+  });
+
+  $('.filters-link').click(function (event) {
+    event.preventDefault();
+    $('.filters-link').toggleClass('link-clicked');
+    $('.filter__options').toggleClass('filter-opened');
+  });
+
+  $('.filters-link').click(function (event) {
+    event.preventDefault();
+    $('.filters-link').toggleClass('clicked');
+    $('.filter__options').toggleClass('opened');
+  });
+
+  $('.list-button--bikes').click(function (event) {
+    event.preventDefault();
+    $('.list-button--bikes').toggleClass('button-clicked');
+    $('.bikes-selection').toggleClass('list-opened');
+    $('.electro-bikes').toggleClass('list-active');
+  });
+
+  $('.list-button--producer').click(function (event) {
+    event.preventDefault();
+    $('.list-button--producer').toggleClass('button-clicked');
+    $('.producer-selection').toggleClass('list-opened');
+    $('.electro-bikes').toggleClass('list-active');
+  });
+
+  $('.list-button--material').click(function (event) {
+    event.preventDefault();
+    $('.list-button--material').toggleClass('button-clicked');
+    $('.material-selection').toggleClass('list-opened');
+    $('.electro-bikes').toggleClass('list-active');
+  });
+
+  $('.list-button--color').click(function (event) {
+    event.preventDefault();
+    $('.list-button--color').toggleClass('button-clicked');
+    $('.color-selection').toggleClass('list-opened');
+    $('.electro-bikes').toggleClass('list-active');
+  });
+
+  $('.list-button--size').click(function (event) {
+    event.preventDefault();
+    $('.list-button--size').toggleClass('button-clicked');
+    $('.size-selection').toggleClass('list-opened');
+    $('.electro-bikes').toggleClass('list-active');
+  });
+
+  $('.list-button--wheels').click(function (event) {
+    event.preventDefault();
+    $('.list-button--wheels').toggleClass('button-clicked');
+    $('.wheels-selection').toggleClass('list-opened');
+    $('.electro-bikes').toggleClass('list-active');
+  });
+
+  $('.list-button--speed').click(function (event) {
+    event.preventDefault();
+    $('.list-button--speed').toggleClass('button-clicked');
+    $('.speed-selection').toggleClass('list-opened');
+    $('.electro-bikes').toggleClass('list-active');
   });
 });

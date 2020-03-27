@@ -1,10 +1,112 @@
 .filter {
-  width: 18%;
-  margin-right: 57px;
+  position: relative;
+}
 
-  li {
+.popular {
+  width: 68%;
+  display: inline-block;
+  font-family: "Hagin Caps", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #9b8869;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 35px;
+  appearance: none;
+  background-image: url("../img/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.filter__options {
+  min-width: 305px;
+  padding: 18px 0 0 15px;
+  background-color: #f0ede8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-105%);
+  transition: all 0.3s ease 0s;
+
+  ul {
     list-style: none;
   }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Hagin Caps", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #ba4f4f;
+  }
+}
+
+.filter__reset {
+  width: 88%;
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #9b8869;
+}
+
+.filters-link {
+  font-family: "Hagin Caps", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #ba4f4f;
+  text-decoration: none;
+}
+
+.filter-close {
+  position: relative;
+  top: -6px;
+  right: -50px;
+  width: 13px;
+  height: 13px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/menu-opened.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.list {
+  margin-left: 12px;
+}
+
+.filter__menu {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list__item:nth-child(2),
+.menu-list__item:nth-child(3) {
+  display: none;
+}
+
+.filter__range,
+.filter__slider,
+.electro-bikes,
+.producer,
+.material,
+.color,
+.size,
+.wheels,
+.speed {
+  width: 68%;
 }
 
 .filter-nav {
@@ -31,6 +133,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 19px;
+  padding-top: 30px;
+  border-top: 1px solid #9b8869;
 
   [value] {
     font-family: "Roboto", sans-serif;
@@ -99,11 +203,15 @@
 .size,
 .wheels,
 .speed {
-  width: 100%;
   position: relative;
   margin-bottom: 30px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #9b8869;
 
   p {
+    display: inline-block;
+    width: 100%;
+    position: relative;
     font-family: "Hagin Caps", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -121,11 +229,14 @@
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #9b8869;
-    margin-bottom: 15px;
+    position: relative;
+    margin: 0;
+    top: -5px;
   }
 
   li {
     margin-bottom: 10px;
+    position: absolute;
   }
 
   input:checked + label::after {
@@ -134,17 +245,65 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+}
 
-  button {
+.speed {
+  border-bottom: none;
+  padding-bottom: 30px;
+}
+
+.list-button {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+
+  &::before {
     position: absolute;
+    content: "";
     width: 16px;
-    height: 16px;
-    top: 0;
-    right: 0;
-    background-image: url("../img/plus.svg");
-    background-color: transparent;
-    border: none;
-    margin: 0;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #9b8869;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(90deg);
+    background-color: #9b8869;
   }
 }
 
+.selection-list {
+  display: none;
+}
+
+.filter-opened {
+  transform: translateX(0);
+}
+
+.list-opened {
+  display: block;
+  transform: translateY(14px);
+
+  li {
+    position: relative;
+  }
+}
+
+.button-clicked {
+  &::after {
+    display: none;
+  }
+}

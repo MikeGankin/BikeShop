@@ -206,7 +206,7 @@
   }
 }
 
-.clicked {
+.hamburger-clicked {
   span {
     transform: scale(0);
   }
@@ -222,7 +222,7 @@
   }
 }
 
-.opened {
+.nav-opened {
   transform: translateX(0);
 }
 
