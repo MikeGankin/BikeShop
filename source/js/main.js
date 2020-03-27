@@ -48,7 +48,7 @@ $(document).ready(function () {
   });
 
   $('.main-header__hamburger').click(function (event) {
-    $('.main-header__hamburger').toggleClass('clicked');
-    $('.main-nav').toggleClass('opened');
+    $('.header__hamburger').toggleClass('clicked');
+    $('.nav').toggleClass('opened');
   });
 });

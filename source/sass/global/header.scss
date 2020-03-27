@@ -8,17 +8,17 @@
   }
 }
 
-.main-header {
+.header {
   width: 90%;
   min-height: 568px;
   margin: 0 auto;
 }
 
-.main-header__content {
+.header__content {
   padding-top: 83px;
 }
 
-.main-nav {
+.nav {
   width: 95%;
   position: absolute;
   top: 0;
@@ -139,7 +139,7 @@
   display: none;
 }
 
-.main-nav__logout {
+.nav__logout {
   position: absolute;
   top: 19px;
   right: 14px;
@@ -147,7 +147,7 @@
   margin: 0;
 }
 
-.main-header__logo {
+.header__logo {
   width: 40%;
   display: block;
   box-sizing: border-box;
@@ -161,7 +161,7 @@
   }
 }
 
-.main-header__hamburger {
+.header__hamburger {
   position: absolute;
   box-sizing: border-box;
   width: 18px;
@@ -266,7 +266,7 @@
   display: none;
 }
 
-.main-header__chart {
+.header__chart {
   position: absolute;
   display: block;
   top: 17px;
