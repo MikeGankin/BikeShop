@@ -47,7 +47,7 @@ $(document).ready(function () {
     ]
   });
 
-  $('.main-header__hamburger').click(function (event) {
+  $('.header__hamburger').click(function (event) {
     $('.header__hamburger').toggleClass('clicked');
     $('.nav').toggleClass('opened');
   });
