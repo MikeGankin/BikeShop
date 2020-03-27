@@ -1,5 +1,6 @@
 .filter {
   position: relative;
+  width: 100%;
 }
 
 .popular {
@@ -18,18 +19,20 @@
   appearance: none;
   background-image: url("../img/select-arrow.svg");
   background-repeat: no-repeat;
-  background-position: 100% 50%;
+  background-position: 76% center;
 }
 
 .filter__options {
-  min-width: 305px;
+  width: 289px;
   padding: 18px 0 0 15px;
   background-color: #f0ede8;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -16px;
   transform: translateX(-105%);
   transition: all 0.3s ease 0s;
+  z-index: 1;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
 
   ul {
     list-style: none;
@@ -68,10 +71,10 @@
 
 .filter-close {
   position: relative;
-  top: -6px;
-  right: -50px;
-  width: 13px;
-  height: 13px;
+  top: -1px;
+  right: -80px;
+  width: 14px;
+  height: 14px;
   background-color: transparent;
   border: none;
   background-image: url("../img/menu-opened.svg");

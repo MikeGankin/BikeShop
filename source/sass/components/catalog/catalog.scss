@@ -2,12 +2,13 @@
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   position: relative;
 }
 
 .catalog {
   width: 80%;
+  margin: 0 auto;
 }
 
 .catalog__list {
@@ -16,7 +17,6 @@
 }
 
 .catalog__item {
-  width: 30%;
   position: relative;
 
   a {
@@ -118,4 +118,8 @@
   .active {
     color: #ba4f4f;
   }
+}
+
+.opacity {
+  opacity: 0.3;
 }

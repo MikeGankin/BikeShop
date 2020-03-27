@@ -55,8 +55,16 @@ $(document).ready(function () {
 
   $('.filters-link').click(function (event) {
     event.preventDefault();
-    $('.filters-link').toggleClass('link-clicked');
-    $('.filter__options').toggleClass('filter-opened');
+    $('.filters-link').addClass('link-clicked');
+    $('.filter__options').addClass('filter-opened');
+    $('.catalog__list').addClass('opacity');
+  });
+
+  $('.filter-close').click(function (event) {
+    event.preventDefault();
+    $('.filters-link').removeClass('link-clicked');
+    $('.filter__options').removeClass('filter-opened');
+    $('.catalog__list').removeClass('opacity');
   });
 
   $('.filters-link').click(function (event) {
