@@ -1,10 +1,10 @@
 .item-wrapper {
-  width: 79%;
+  width: 87%;
   margin: 0 auto;
 }
 
 .bread-crumbs {
-  width: 19%;
+  width: 80%;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -13,25 +13,46 @@
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
-  margin-top: 40px;
-  margin-bottom: 52px;
+  margin: 10px auto 40px;
 
   a {
+    display: inline-block;
+    padding-right: 22px;
     text-decoration: none;
     color: #9b8869;
   }
 }
 
-.item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.bread-crumbs__item {
+  position: relative;
+
+  &:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 11px;
+    top: 50%;
+    transform: translateY(-50%) rotate(15deg);
+    right: 12%;
+    background-color: #9b8869;
+  }
+
+  &:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 11px;
+    top: 50%;
+    transform: translateY(-50%) rotate(15deg);
+    right: 12%;
+    background-color: #9b8869;
+  }
 }
 
 .item__img {
-  width: 42%;
   position: relative;
-  flex-basis: 50%;
+  min-height: 288px;
+  margin-bottom: 55px;
 
   &::after {
     position: absolute;
@@ -39,43 +60,51 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 353px;
-    height: 425px;
+    width: 240px;
+    height: 280px;
     border: 6px solid #f0ede8;
+    opacity: 0.3;
   }
 
   img {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     display: block;
     mix-blend-mode: multiply;
     object-fit: cover;
-    z-index: 1;
   }
 }
 
-.item__description {
-  width: 52%;
-  flex-basis: 50%;
+.item__chart {
+  display: block;
+  width: 70%;
+  margin: 0 auto 30px;
+  background-color: #ba4f4f;
+  padding: 13px 0 13px 0;
+  font-family: "Hagin Caps", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e9e1d5;
+}
 
+.item__description {
   h2 {
     font-family: "Hagin Caps", sans-serif;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 28px;
+    font-weight: 300;
     text-transform: uppercase;
+    margin: 0 auto 10px;
+    text-align: center;
     color: #817155;
   }
 
-  .item__price {
-    font-family: "Hagin Caps", sans-serif;
-    font-size: 48px;
-    line-height: 56px;
-    text-transform: uppercase;
-    color: #ba4f4f;
-  }
-
   .item__rating {
+    margin: 0 auto 20px;
+    text-align: center;
+    vertical-align: center;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -85,12 +114,22 @@
     color: #9b8869;
   }
 
+  .item__price {
+    font-family: "Hagin Caps", sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #ba4f4f;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
   .item__text {
     font-family: "Roboto", sans-serif;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 16px;
     letter-spacing: 0.2px;
     color: #817155;
+    text-align: center;
+    margin: 0 auto 10px;
   }
 
   .item__warranty {
@@ -99,13 +138,15 @@
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #ba4f4f;
+    text-align: center;
+    margin: 0 auto 30px;
   }
 }
 
 .item__controls {
   position: absolute;
-  top: 70%;
-  left: 25%;
+  top: 520px;
+  left: 110px;
   display: flex;
   justify-content: space-between;
 }

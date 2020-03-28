@@ -27,8 +27,9 @@
   margin-bottom: 45px;
   background-color: #f0ede8;
   z-index: 1;
-  transform: translateX(-100%);
+  transform: translateX(-106%);
   transition: all 0.3s ease 0s;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .navigation-list {
