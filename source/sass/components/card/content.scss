@@ -18,8 +18,8 @@
     text-decoration: none;
     text-align: left;
     color: #817155;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 17px;
+    padding-bottom: 10px;
   }
 
   .description {
@@ -27,7 +27,7 @@
     padding-right: 28px;
     background-image: url("../img/select-arrow.svg");
     background-repeat: no-repeat;
-    background-position: 270px center;
+    background-position: 288px center;
     background-size: 5%;
     border-top: 1px solid #9b8869;
   }
@@ -37,7 +37,7 @@
     padding-right: 43px;
     background-image: url("../img/select-arrow.svg");
     background-repeat: no-repeat;
-    background-position: 270px center;
+    background-position: 288px center;
     background-size: 5%;
     border-top: 1px solid #9b8869;
     border-bottom: 1px solid #9b8869;
@@ -48,12 +48,12 @@
     padding-right: 94px;
     background-image: url("../img/select-arrow.svg");
     background-repeat: no-repeat;
-    background-position: 270px center;
+    background-position: 288px center;
     background-size: 5%;
   }
 
   .overviews {
-    padding-left: 98px;
+    padding-left: 16px;
     padding-right: 97px;
     border-top: 1px solid #9b8869;
     border-bottom: 1px solid #9b8869;
@@ -65,14 +65,14 @@
 }
 
 .content__item:nth-child(3) {
-  margin-bottom: 590px;
+  margin-bottom: 505px;
 }
 
 .content__container {
   width: 88%;
   position: absolute;
-  top: 210px;
-  left: 50%;
+  top: 198px;
+  left: 49%;
   transform: translateX(-50%);
   margin: 0 auto;
 
@@ -80,15 +80,17 @@
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 18px;
-    color: #9B8869;
+    margin-bottom: 5px;
+    color: #9b8869;
   }
 
   h3 {
     font-family: "Hagin Caps", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 23px;
     line-height: 30px;
+    margin: 17px auto 0;
     text-transform: uppercase;
     color: #817155;
   }
@@ -99,28 +101,32 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.2px;
     color: #817155;
+    margin: 0 auto 8px;
   }
 }
 
 .content__container--second {
-  top: 470px;
+  top: 390px;
+
+  p {
+    margin-bottom: 31px;
+  }
 
   a {
     display: block;
     width: 88%;
-    font-family: "Hagin Caps", sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
     text-align: center;
-    text-transform: uppercase;
     text-decoration: none;
+    text-transform: uppercase;
+    color: #817155;
     border: 1px solid #817155;
     margin: 0 auto;
     padding: 20px 0 15px 0;
-    color: #817155;
   }
 }
