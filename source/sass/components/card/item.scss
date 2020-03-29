@@ -104,7 +104,6 @@
   .item__rating {
     margin: 0 auto 20px;
     text-align: center;
-    vertical-align: center;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -164,12 +163,11 @@
 .tumbler-1::after {
   position: absolute;
   content: " ";
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   top: 0;
   left: 0;
-  background-size: 50% 50%;
-  background-color: #333232;
+  background-color: #e9e1d5;
   border: 2px solid #9b8869;
   border-radius: 100%;
 }
@@ -177,12 +175,11 @@
 .tumbler-2::after {
   position: absolute;
   content: " ";
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   top: 0;
   left: 0;
   background-size: 50%;
-  background-color: #7e5b48;
   border: 2px solid #9b8869;
   border-radius: 100%;
 }
@@ -190,13 +187,35 @@
 .tumbler-3::after {
   position: absolute;
   content: " ";
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   top: 0;
   left: 0;
   background-size: 50%;
-  background-color: #d5b688;
   border: 2px solid #9b8869;
   border-radius: 100%;
+}
+
+.item__controls span {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  top: 21px;
+  background-color: #333232;
+  display: none;
+}
+
+.item__controls input:checked + .item__controls span {
+  display: block;
+  left: 43px;
+}
+
+.item__controls input:checked + .tumbler-2::after {
+  background-color: #7e5b48;
+}
+
+.item__controls input:checked + .tumbler-3::after {
+  background-color: #d5b688;
 }
 
