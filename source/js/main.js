@@ -28,6 +28,7 @@ $(document).ready(function () {
     mobileFirst: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    initialSlide: 3,
     infinite: true,
     responsive: [
       {

@@ -154,7 +154,7 @@
   box-sizing: border-box;
   position: absolute;
   top: 12px;
-  left: 160px;
+  left: 50%;
   transform: translateX(-50%);
 
   svg {
@@ -286,18 +286,28 @@
     }
   }
 
-  .main-header__content {
+  .header__content {
     padding-top: 120px;
   }
 
-  .main-header__logo {
+  .header__logo {
     top: 17px;
     left: 50%;
   }
 
-  .main-header__hamburger {
+  .header__hamburger {
     top: 25px;
-    left: 25px;
+    left: 41px;
+  }
+
+  .header__chart {
+    top: 23px;
+    right: 41px;
+  }
+
+  .bread-crumbs__item:nth-child(1)::after,
+  .bread-crumbs__item:nth-child(2)::after {
+    right: 20%;
   }
 }
 

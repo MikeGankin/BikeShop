@@ -276,7 +276,9 @@
 
 .another-item {
   width: 90%;
-  margin: 0 auto;
+  max-height: 461px;
+  margin: 0 auto 25px;
+  border-bottom: 1px solid #9b8869;
 
   h3 {
     font-family: "Hagin Caps", sans-serif;
@@ -287,5 +289,6 @@
     text-align: center;
     text-transform: uppercase;
     color: #817155;
+    margin: 0 auto 24px;
   }
 }
