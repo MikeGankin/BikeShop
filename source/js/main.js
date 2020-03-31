@@ -8,17 +8,17 @@ $(document).ready(function () {
     infinite: true,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1365,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3
+          slidesToShow: 4,
+          slidesToScroll: 4
         }
       }
     ]
@@ -39,7 +39,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 1023,
+        breakpoint: 1365,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 4

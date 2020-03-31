@@ -335,7 +335,10 @@
     justify-content: space-between;
     margin: 0 auto;
     padding: 0;
-    width: 85%;
+    width: 75%;
+    top: 3px;
+    position: relative;
+    left: -31px;
   }
 
   .login-list {
@@ -360,8 +363,8 @@
   }
 
   .login-list__item--search {
-    top: 0;
-    right: 50px;
+    top: 5px;
+    right: 38px;
 
     span {
       display: none;
@@ -369,8 +372,8 @@
   }
 
   .header__logo {
-    left: 243px;
-    top: 29px;
+    left: 145px;
+    top: 36px;
   }
 
   .login-list__item--chart {
@@ -381,8 +384,8 @@
 
   .login-list__item--login {
     position: relative;
-    top: 0;
-    left: 0;
+    top: 7px;
+    left: 19px;
   }
 
   .login-list__item--login svg {
@@ -416,5 +419,10 @@
     .slogan__logo {
       margin-bottom: 60px;
     }
+  }
+
+  .header__chart {
+    top: 43px;
+    right: 41px;
   }
 }
