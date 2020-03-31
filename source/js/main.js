@@ -17,8 +17,8 @@ $(document).ready(function () {
       {
         breakpoint: 1365,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4
+          slidesToShow: 3,
+          slidesToScroll: 3
         }
       }
     ]
@@ -66,12 +66,6 @@ $(document).ready(function () {
     $('.filters-link').removeClass('link-clicked');
     $('.filter__options').removeClass('filter-opened');
     $('.catalog__list').removeClass('opacity');
-  });
-
-  $('.filters-link').click(function (event) {
-    event.preventDefault();
-    $('.filters-link').toggleClass('clicked');
-    $('.filter__options').toggleClass('opened');
   });
 
   $('.list-button--bikes').click(function (event) {

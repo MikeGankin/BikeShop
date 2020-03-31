@@ -90,6 +90,7 @@
   width: 100%;
   list-style: none;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 0;
   margin: 0;
@@ -308,5 +309,110 @@
 .button-clicked {
   &::after {
     display: none;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .filter__options {
+    width: 16%;
+    box-shadow: none;
+    position: relative;
+    left: 0;
+    padding: 0;
+    background-color: #e9e1d5;
+    display: none;
+
+    select {
+      display: none;
+    }
+  }
+
+  .filters-link {
+    display: block;
+  }
+
+  .link-clicked {
+    display: none;
+  }
+
+  .filter-opened {
+    display: block;
+  }
+
+  .filter__menu {
+    border-top: 1px solid #9b8869;
+    border-bottom: 1px solid #9b8869;
+    padding: 20px 0 20px 0;
+  }
+
+  .menu-list__item:nth-child(2) {
+    display: block;
+
+    select {
+      font-family: "Hagin Caps", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: 0.04em;
+      color: #9b8869;
+    }
+  }
+
+  .menu-list__item:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+
+    p {
+      margin: 0;
+      color: #9b8869;
+      font-size: 18px;
+    }
+
+    span {
+      color: #ba4f4f;
+    }
+
+    a {
+      font-family: "Hagin Caps", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: 0.04em;
+      color: #9b8869;
+      text-decoration: none;
+    }
+  }
+
+  .filter__reset {
+    width: 93%;
+    position: relative;
+    top: -42px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  .filter-close {
+    left: 0;
+  }
+
+  .filter__range {
+    border: none;
+  }
+
+  .color,
+  .electro-bikes,
+  .filter__range,
+  .filter__slider,
+  .material,
+  .producer,
+  .size,
+  .speed,
+  .wheels {
+    width: 100%;
   }
 }

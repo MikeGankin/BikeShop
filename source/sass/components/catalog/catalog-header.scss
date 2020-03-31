@@ -1,11 +1,27 @@
-.header-catalog {
-  min-height: 0;
+.header-container--catalog {
+  background-image: none;
 }
 
-.header__slogan--catalog {
+.slogan-catalog {
   display: none;
 }
 
-.header__content--catalog {
-  padding-top: 58px;
+.header-catalog {
+  min-height: 58px;
 }
+
+@media (min-width: $desktop-width) {
+  .header-catalog {
+    max-height: 105px;
+    padding-bottom: 20px;
+
+    .social-list {
+      display: none;
+    }
+  }
+
+  .header__content--catalog {
+    padding-top: 58px;
+  }
+}
+
