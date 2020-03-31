@@ -307,16 +307,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-header {
+  .header {
     min-height: 0;
     padding-bottom: 30px;
   }
 
-  .main-header__content {
+  .header__content {
     padding-top: 36px;
   }
 
-  .main-nav {
+  .nav {
     position: relative;
     transform: none;
     transition: none;
@@ -326,6 +326,7 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
+    box-shadow: none;
   }
 
   .navigation-list {
@@ -353,23 +354,31 @@
     display: none;
   }
 
-  .main-nav__logout,
-  .main-header__hamburger {
+  .nav__logout,
+  .header__hamburger {
     display: none;
   }
 
   .login-list__item--search {
+    top: 0;
+    right: 50px;
+
     span {
       display: none;
     }
   }
 
-  .main-header__logo {
-    left: 134px;
+  .header__logo {
+    left: 243px;
     top: 29px;
   }
 
-  .login-list__item--chart,
+  .login-list__item--chart {
+    position: relative;
+    top: 37px;
+    left: 131px;
+  }
+
   .login-list__item--login {
     position: relative;
     top: 0;
