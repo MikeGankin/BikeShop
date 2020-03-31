@@ -292,3 +292,17 @@
     margin: 0 auto 24px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .bread-crumbs__item:nth-child(1)::after {
+    right: -50%;
+  }
+
+  .bread-crumbs__item:nth-child(2)::after {
+    right: -100%;
+  }
+
+  .item__controls {
+    left: 333px;
+  }
+}

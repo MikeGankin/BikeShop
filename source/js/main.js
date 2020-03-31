@@ -32,14 +32,14 @@ $(document).ready(function () {
     infinite: true,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1023,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3

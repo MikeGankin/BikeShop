@@ -131,3 +131,35 @@
   }
 }
 
+@media (max-width: $tablet-width) {
+  .content {
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  .content__list .conditions,
+  .content__list .description,
+  .content__list .overviews,
+  .content__list .reviews {
+    background-size: 3%;
+    background-position: 100% center;
+  }
+
+  .content__container {
+    width: 100%;
+    left: 50%;
+  }
+
+  .content__container--second {
+    top: 350px;
+
+    .text {
+      margin-bottom: 70px;
+    }
+  }
+}
+
+@media (max-width: $desktop-width) {
+
+}

@@ -304,11 +304,6 @@
     top: 23px;
     right: 41px;
   }
-
-  .bread-crumbs__item:nth-child(1)::after,
-  .bread-crumbs__item:nth-child(2)::after {
-    right: 20%;
-  }
 }
 
 @media (min-width: $desktop-width) {
