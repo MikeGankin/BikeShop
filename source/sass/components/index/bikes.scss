@@ -42,7 +42,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
   background-color: #e9e1d5;
   height: 348px;
   margin-bottom: 69px;
@@ -61,13 +60,14 @@
   .link {
     height: 178px;
     display: flex;
+    box-sizing: border-box;
     align-items: center;
-    justify-content: center;
 
     img {
       position: relative;
       z-index: 1;
       max-width: 100%;
+      object-fit: cover;
       height: auto;
       mix-blend-mode: multiply;
     }
