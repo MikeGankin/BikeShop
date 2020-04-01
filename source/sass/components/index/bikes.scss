@@ -43,7 +43,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #e9e1d5;
-  height: 348px;
+  min-height: 348px;
   margin-bottom: 69px;
 
   &::after {
@@ -201,13 +201,35 @@
   }
 
   .bikes__wrapper {
+    min-height: 423px;
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 217px;
+      z-index: 1;
+    }
+
     &::after {
-      width: 178px;
-      height: 240px;
+      width: 164px;
+      height: 231px;
     }
 
     a {
-      margin-bottom: 30px;
+      padding-top: 37px;
+      margin-bottom: 106px;
+    }
+
+    .title {
+      width: 50.2%;
+      margin-bottom: 3px;
+    }
+
+    .description {
+      width: 72%;
+      margin-bottom: 3px;
     }
   }
 

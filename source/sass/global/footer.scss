@@ -110,10 +110,24 @@
   .footer-content {
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 28px;
 
     .footer-content__logo {
+      position: relative;
       order: 0;
       width: 18%;
+      top: -8px;
+      left: 90px;
+    }
+
+    .footer__info {
+      position: relative;
+      top: 3px;
+      left: 5px;
+
+      p {
+        margin-right: 25px;
+      }
     }
 
     .footer-content__list {
@@ -127,6 +141,21 @@
 
     p {
       order: -1;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 12px;
+        top: 4px;
+        left: 56px;
+        background-color: #baa480;
+      }
     }
+  }
+
+  .footer-nav__list {
+    padding: 20px 0 20px 0;
   }
 }

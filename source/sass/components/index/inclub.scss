@@ -72,14 +72,14 @@
 
 @media (min-width: $desktop-width) {
   .inclab__content {
-    width: 75%;
+    width: 82%;
     display: flex;
     justify-content: space-between;
-    padding: 123px 0 60px;
+    padding: 123px 0 87px;
   }
 
   .inclub__text {
-    width: 49%;
+    width: 48%;
 
     h2 {
       font-family: "Hagin Caps", sans-serif;
@@ -90,6 +90,7 @@
       text-align: left;
       text-transform: uppercase;
       color: #baa480;
+      margin-bottom: 14px;
     }
 
     p {
@@ -103,8 +104,16 @@
       color: #e9e1d5;
     }
 
+    .inclub__first-paragraph {
+      margin-bottom: 10px;
+    }
+
+    .inclub__second-paragraph {
+      margin-bottom: 72px;
+    }
+
     a {
-      width: 47%;
+      width: 48%;
       display: block;
       font-family: "Hagin Caps", sans-serif;
       font-style: normal;
@@ -115,13 +124,13 @@
       text-transform: uppercase;
       text-decoration: none;
       color: #baa480;
-      padding: 20px 0 20px 0;
+      padding: 17px 0 13px 0;
       margin: 0;
       border: 1px solid #baa480;
     }
   }
 
   .inclub__img {
-    width: 44%;
+    width: 60%;
   }
 }

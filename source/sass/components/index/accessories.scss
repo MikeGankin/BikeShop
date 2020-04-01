@@ -170,6 +170,45 @@
     padding-top: 77px;
   }
 
+  .accessories__wrapper {
+    min-height: 423px;
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 61px;
+      z-index: 1;
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    &::after {
+      width: 164px;
+      height: 231px;
+    }
+
+    a {
+      padding-top: 37px;
+      margin-bottom: 106px;
+    }
+
+    .title {
+      width: 42.2%;
+      margin-bottom: 3px;
+    }
+
+    .description {
+      width: 66%;
+      margin-bottom: 8px;
+    }
+
+    .link {
+      margin-bottom: 67px;
+    }
+  }
+
   .accessories__caption {
     font-family: "Hagin Caps", sans-serif;
     font-style: normal;
@@ -198,7 +237,7 @@
 
   .accessories__link {
     width: 91%;
-    margin: -15px auto 95px;
+    margin: -7px auto 95px;
 
     a {
       width: 24%;
