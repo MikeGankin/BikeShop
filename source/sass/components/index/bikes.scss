@@ -184,7 +184,7 @@
     text-transform: uppercase;
     color: #817155;
     width: 80%;
-    margin: 0 auto 20px;
+    margin: 0 auto 7px;
   }
 
   .bikes__text {
@@ -216,12 +216,21 @@
     margin: 0 auto 95px;
 
     a {
-      width: 24%;
+      width: 27%;
+      padding: 16px 0 12px;
+      font-size: 24px;
     }
 
-    &::before,
+    &::before {
+      width: 414px;
+      left: -55px;
+      top: 30px;
+    }
+
     &::after {
-      width: 350px;
+      width: 413px;
+      right: -56px;
+      top: 30px;
     }
   }
 }

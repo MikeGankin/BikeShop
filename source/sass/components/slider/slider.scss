@@ -45,6 +45,16 @@
 
 @media (min-width: $desktop-width) {
   .slick-slider {
-    margin-bottom: 61px;
+    margin-bottom: 79px;
+  }
+
+  .slick-prev {
+    top: 133px;
+    left: -8px;
+  }
+
+  .slick-next {
+    top: 133px;
+    right: -8px;
   }
 }

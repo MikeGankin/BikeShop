@@ -310,6 +310,7 @@
 
 @media (min-width: $desktop-width) {
   .header {
+    width: 94%;
     min-height: 0;
     padding-bottom: 30px;
   }
@@ -324,7 +325,7 @@
     transition: none;
     background-color: transparent;
     min-height: 0;
-    margin: 0 0 185px auto;
+    margin: 0 0 191px auto;
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -337,10 +338,10 @@
     justify-content: space-between;
     margin: 0 auto;
     padding: 0;
-    width: 75%;
-    top: 3px;
+    top: 4px;
     position: relative;
-    left: -31px;
+    left: -33px;
+    width: 72%;
   }
 
   .login-list {
@@ -366,7 +367,7 @@
 
   .login-list__item--search {
     top: 5px;
-    right: 38px;
+    right: 65px;
 
     span {
       display: none;
@@ -387,7 +388,7 @@
   .login-list__item--login {
     position: relative;
     top: 7px;
-    left: 19px;
+    left: -3px;
   }
 
   .login-list__item--login svg {
@@ -405,22 +406,32 @@
     display: none;
   }
 
+  .social-list__item:first-child {
+    display: flex;
+    align-items: center;
+  }
+
   .social-list {
     display: flex;
     justify-content: space-between;
     list-style: none;
     padding: 0;
     margin: 0 0 0 auto;
-    width: 15%;
+    width: 7.7%;
   }
 
   .slogan {
-    width: 37%;
-    margin: 0 0 198px auto;
+    width: 40%;
+    margin: 0 95px 198px auto;
 
     .slogan__logo {
-      margin-bottom: 60px;
+      margin-bottom: 55px;
     }
+  }
+
+  .slogan__shop-link {
+    width: 47%;
+    margin: 0 125px 0 auto;
   }
 
   .header__chart {

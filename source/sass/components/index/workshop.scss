@@ -80,11 +80,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .workshop {
+    background-image: url("../img/wsh-back-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      background-image: url("../img/wsh-back-desktop@2x.jpg");
+    }
+  }
+
   .workshop__content {
     width: 75%;
     display: flex;
     justify-content: space-between;
-    padding: 123px 0 60px;
+    padding: 95px 0 63px;
   }
 
   .workshop__text {
@@ -99,6 +107,7 @@
       text-align: left;
       text-transform: uppercase;
       color: #baa480;
+      margin: 0 0 6px;
     }
 
     p {
@@ -124,13 +133,18 @@
       text-transform: uppercase;
       text-decoration: none;
       color: #baa480;
-      padding: 20px 0 20px 0;
+      padding: 20px 0 10px 0;
       border: 1px solid #baa480;
     }
   }
 
+  .workshop__second-paragraph {
+    margin-bottom: 44px;
+  }
+
   .workshop__img {
     order: -1;
-    width: 44%;
+    top: -2px;
+    width: 45%;
   }
 }

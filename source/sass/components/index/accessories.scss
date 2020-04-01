@@ -167,7 +167,7 @@
 
 @media (min-width: $desktop-width) {
   .accessories {
-    padding-top: 80px;
+    padding-top: 77px;
   }
 
   .accessories__caption {
@@ -180,7 +180,7 @@
     text-transform: uppercase;
     color: #817155;
     width: 80%;
-    margin: 0 auto 20px;
+    margin: 0 auto 11px;
   }
 
   .accessories__text {
@@ -192,21 +192,23 @@
     text-align: center;
     letter-spacing: 0.2px;
     color: #817155;
-    width: 65%;
-    margin: 0 auto 80px;
+    width: 60%;
+    margin: 0 auto 64px;
   }
 
   .accessories__link {
-    width: 82%;
-    margin: 0 auto 95px;
+    width: 91%;
+    margin: -15px auto 95px;
 
     a {
       width: 24%;
+      padding: 16px 0 12px;
     }
 
     &::before,
     &::after {
-      width: 350px;
+      top: 30px;
+      width: 413px;
     }
   }
 }
