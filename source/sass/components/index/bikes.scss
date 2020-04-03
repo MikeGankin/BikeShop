@@ -59,9 +59,16 @@
 
   .link {
     height: 178px;
-    display: flex;
     box-sizing: border-box;
-    align-items: center;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 152px;
+      z-index: 1;
+    }
 
     img {
       position: relative;
