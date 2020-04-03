@@ -96,7 +96,10 @@
   margin: 0;
 }
 
-.menu-list__item:nth-child(2),
+.menu-list__item:nth-child(2) {
+  display: none;
+}
+
 .menu-list__item:nth-child(3) {
   display: none;
 }
