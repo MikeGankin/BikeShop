@@ -87,7 +87,7 @@
   }
 }
 
-@media (min-width: $tablet-width), (max-width: $mobile-width) {
+@media (min-width: $tablet-width), (min-width: $mobile-width) {
   .footer-nav {
     display: none;
   }
