@@ -1,8 +1,74 @@
 .header-card {
   min-height: 0;
   border-bottom: 1px solid #9b8869;
+  width: 100%;
+}
+
+.header__content--card {
+  padding-top: 58px;
 }
 
 .header__slogan--card {
   display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .header-card {
+    max-height: 105px;
+    padding-bottom: 24px;
+
+    .social-list {
+      display: none;
+    }
+  }
+
+  .header__content--card {
+    padding-top: 36px;
+  }
+
+  .card-nav {
+    margin: 0 0 20px 260px;
+    width: 81%;
+
+    .login-list__item--login {
+      right: 22px;
+    }
+  }
+
+  .card-nav ul:nth-child(1) {
+    text-transform: none;
+    left: 13px;
+  }
+
+  .card-nav ul:nth-child(2) {
+    margin-right: 92px;
+  }
+
+  .card-nav li:nth-child(1) {
+    margin-right: -26px;
+  }
+
+  .card-nav li:nth-child(2) {
+    margin-right: -28px;
+
+    span {
+      color: #ba4f4f;
+    }
+  }
+
+  .card-nav li:nth-child(3) {
+    margin-right: -27px;
+  }
+
+  .card-nav li:nth-child(4) {
+    margin-right: -28px;
+  }
+
+  .card-nav li:nth-child(5) {
+    margin-right: -27px;
+  }
+
+  .card-nav li:nth-child(6) {
+    margin-right: 60px;
+  }
 }

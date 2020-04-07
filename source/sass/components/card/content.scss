@@ -131,7 +131,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .content {
     width: 100%;
     margin: 0 auto;
@@ -160,6 +160,6 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (min-width: $desktop-width) {
 
 }
