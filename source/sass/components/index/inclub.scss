@@ -71,6 +71,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .inclab {
+    margin-bottom: 31px;
+  }
+
   .inclab__content {
     width: 82%;
     display: flex;
@@ -132,5 +136,6 @@
 
   .inclub__img {
     width: 60%;
+    padding-top: 6px;
   }
 }

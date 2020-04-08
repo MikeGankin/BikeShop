@@ -317,3 +317,64 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .filter__options {
+    display: block;
+    width: 16%;
+    box-shadow: none;
+    position: relative;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #e9e1d5;
+    transform: none;
+
+    select {
+      display: none;
+    }
+  }
+
+  .filters-link {
+    display: block;
+  }
+
+  .link-clicked {
+    display: none;
+  }
+
+  .filter__menu {
+    border-top: 1px solid #9b8869;
+    border-bottom: 1px solid #9b8869;
+    padding: 20px 0 20px 0;
+  }
+
+  .filter__reset {
+    width: 93%;
+    position: relative;
+    top: -42px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  .filter-close {
+    left: 0;
+  }
+
+  .filter__range {
+    border: none;
+  }
+
+  .color,
+  .electro-bikes,
+  .filter__range,
+  .filter__slider,
+  .material,
+  .producer,
+  .size,
+  .speed,
+  .wheels {
+    width: 100%;
+  }
+}
