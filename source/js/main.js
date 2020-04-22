@@ -1,7 +1,6 @@
 'use strict';
 
 $(document).ready(function () {
-
   $('.bikes__list').slick({
     mobileFirst: true,
     slidesToShow: 1,
@@ -55,24 +54,28 @@ $(document).ready(function () {
     $('.nav').toggleClass('nav-opened');
   });
 
-  $(window).resize(function () {
-    var width = $(window).width();
-    console.log(width);
+  $('.filters-link').click(function (event) {
+    event.preventDefault();
+    $('.filters-link').addClass('link-clicked');
+    $('.filter__options').addClass('filter-opened');
 
-    if (width < 1440) {
-      $('.filters-link').click(function (event) {
-        event.preventDefault();
-        $('.filters-link').addClass('link-clicked');
-        $('.filter__options').addClass('filter-opened');
-        $('.catalog__list').addClass('opacity');
-      });
+    if ($(window).width() < 1366) {
+      $('.catalog').css('opacity', '0.5');
+    }
 
-      $('.filter-close').click(function (event) {
-        event.preventDefault();
-        $('.filters-link').removeClass('link-clicked');
-        $('.filter__options').removeClass('filter-opened');
-        $('.catalog__list').removeClass('opacity');
-      });
+    if ($(window).width() > 1366) {
+      $('.catalog').css('margin', '17px auto 0 250px');
+    }
+  });
+
+  $('.filter-close').click(function (event) {
+    event.preventDefault();
+    $('.filters-link').toggleClass('link-clicked');
+    $('.filter__options').toggleClass('filter-opened');
+    $('.catalog').css('opacity', '1');
+
+    if ($(window).width() > 1366) {
+      $('.catalog').css('margin', '17px auto 0');
     }
   });
 

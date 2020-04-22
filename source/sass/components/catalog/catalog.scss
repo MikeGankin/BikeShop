@@ -4,10 +4,11 @@
   width: 90%;
   margin: 0 auto 30px;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .catalog {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -34,7 +35,7 @@
 
   img {
     display: block;
-    width: 100%;
+    width: auto;
     mix-blend-mode: multiply;
     margin: 0;
     object-fit: cover;
@@ -43,7 +44,7 @@
 
   svg {
     position: absolute;
-    top: 44%;
+    top: 155px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -52,7 +53,7 @@
     font-family: "Hagin Caps Medium", sans-serif;
     font-size: 24px;
     font-weight: 300;
-    width: 65%;
+    width: 71.4%;
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto 9px;
@@ -126,68 +127,27 @@
   }
 }
 
-.opacity {
-  opacity: 0.3;
-}
-
 @media (min-width: $desktop-width) {
   .catalog-container {
     width: 93%;
-    position: relative;
+    flex-wrap: wrap;
   }
 
   .catalog {
-    width: 72%;
-    position: absolute;
-    top: 104px;
-    left: 300px;
-    margin: 0;
+    width: 80%;
+    display: flex;
+    margin: 17px auto 0;
   }
 
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-weight: 400;
   }
 
-  .menu-list__item:nth-child(2) {
-    display: block;
-
-    select {
-      font-family: "Hagin Caps", sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 20px;
-      letter-spacing: 0.04em;
-      color: #9b8869;
-    }
-  }
-
-  .menu-list__item:nth-child(3) {
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
-
-    p {
-      margin: 0;
-      color: #9b8869;
-      font-size: 18px;
-    }
-
-    span {
-      color: #ba4f4f;
-    }
-
-    a {
-      font-family: "Hagin Caps", sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 20px;
-      letter-spacing: 0.04em;
-      color: #9b8869;
-      text-decoration: none;
-    }
+  .catalog__item h3 {
+    width: 54.7%;
   }
 }
+
