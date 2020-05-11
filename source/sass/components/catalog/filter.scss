@@ -399,6 +399,19 @@
 
   .menu-list__item:nth-child(2) {
     flex-basis: 52%;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      top: 0;
+      left: 140px;
+      background-image: url("../img/select-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 
     select {
       font-family: "Hagin Caps", sans-serif;
@@ -408,11 +421,9 @@
       line-height: 20px;
       letter-spacing: 0.04em;
       color: #9b8869;
-      background-image: url('../img/select-arrow.svg');
-      background-position: 100% 40%;
-      background-repeat: no-repeat;
       background-color: transparent;
       border: none;
+      appearance: none;
     }
   }
 
